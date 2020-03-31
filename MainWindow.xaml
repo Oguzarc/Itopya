@@ -1,0 +1,2729 @@
+﻿<Window x:Class="İtopya.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:İtopya"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="auto" Width="325" ResizeMode="NoResize"
+        >
+
+    <ScrollViewer>
+        <Grid Height="Auto" Background="White" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="73" />
+                <RowDefinition Height="0" x:Name="grd_rowMenu"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+
+
+            <!--SEPET-->
+
+
+            <Border  Grid.Row="3" x:Name="Sepet" Visibility="Visible" Height="0" >
+                <Grid Visibility="Visible" x:Name="SepetGrid">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Border  Grid.Row="0" x:Name="Urun1" Visibility="Visible" Height="0" >
+                        <Grid>
+                            <Image HorizontalAlignment="Left" Height="81" Margin="0,0,0,-1" VerticalAlignment="Top" Width="100" x:Name="Urun1foto" Visibility="Visible"/>
+                            <Image x:Name="Urun1silf" HorizontalAlignment="Left" Height="31" Margin="210,57,-0.2,0" VerticalAlignment="Top" Width="47" Source="Image/47-512.png" Visibility="Hidden"/>
+                            <Label Content = ""  x:Name="Urun1label" Margin="100,0,-0.2,46.6" Visibility="Visible" FontSize="10"/>
+                            <Label Content = ""  x:Name="Urun1fiyat" Margin="100,38,-0.4,8.6" Visibility="Visible" FontSize="10"/>
+                            <Label Content = "TL"  x:Name="Urun1fiyatt" Margin="135,38,-0.4,8.6" Visibility="Visible" FontSize="10"/>
+                            <Button Opacity="0" x:Name="urun1sil" Margin="220,57,-0.2,-0.4" Click="urun1sil_Click" Visibility="Visible" />
+                        </Grid>
+                    </Border>
+
+                    <Border  Grid.Row="1" x:Name="Urun2" Visibility="Visible" Height="0" >
+
+                        <Grid>
+                            <Image HorizontalAlignment="Left" Height="81" Margin="0,0,0,-1" VerticalAlignment="Top" Width="100" x:Name="Urun2foto" Visibility="Visible"/>
+                            <Label Content = ""  x:Name="Urun2label" Margin="100,0,-0.2,56.6" Visibility="Visible" FontSize="10"/>
+                            <Label Content = "100"  x:Name="Urun2fiyat" Margin="100,38,-0.4,8.6" Visibility="Visible" FontSize="10"/>
+                            <Label Content = "TL"  x:Name="Urun2fiyatt" Margin="135,38,-0.4,8.6" Visibility="Visible" FontSize="10"/>
+                            <Image x:Name="Urun2silf" HorizontalAlignment="Left" Height="31" Margin="228,57,-0.2,0" VerticalAlignment="Top" Width="29" Source="Image/47-512.png" Visibility="Hidden"/>
+                            <Button Opacity="0" x:Name="urun2sil" Margin="228,57,-0.4,9.6" Click="urun2sil_Click" Visibility="Visible" />
+                        </Grid>
+
+                    </Border>
+
+                    <Border  Grid.Row="2" x:Name="Urun3" Visibility="Visible" Height="0" >
+
+
+                        <Grid>
+                            <Image HorizontalAlignment="Left" Height="81" Margin="0,0,0,-1" VerticalAlignment="Top" Width="100" x:Name="Urun3foto" Visibility="Visible"/>
+                            <Label Content = ""  x:Name="Urun3label" Margin="105,0,-0.2,54.6" Visibility="Visible" FontSize="10"/>
+                            <Label Content = ""  x:Name="Urun3fiyat" Margin="100,38,-0.4,8.6" Visibility="Visible" FontSize="10"/>
+                            <Label Content = "TL"  x:Name="Urun3fiyatt" Margin="135,38,-0.4,8.6" Visibility="Visible" FontSize="10"/>
+                            <Image x:Name="Urun3silf" HorizontalAlignment="Left" Height="31" Margin="228,57,-0.2,0" VerticalAlignment="Top" Width="29" Source="Image/47-512.png" Visibility="Hidden"/>
+                            <Button Opacity="0" x:Name="urun3sil" Margin="228,57,-0.4,8.6" Click="urun3sil_Click" Visibility="Visible" />
+                        </Grid>
+
+                    </Border>
+
+                    <Border  Grid.Row="3" x:Name="Urun4" Visibility="Visible" Height="0" >
+                        <Grid >
+                            <Image HorizontalAlignment="Left" Height="81" Margin="0,0,0,-1" VerticalAlignment="Top" Width="100" x:Name="Urun4foto" Visibility="Visible"/>
+                            <Label Content = ""  x:Name="Urun4label" Margin="105,0,-0.2,50.6" Visibility="Visible"/>
+                            <Label Content = ""  x:Name="Urun4fiyat" Margin="100,38,-0.4,8.6" Visibility="Visible" FontSize="10"/>
+                            <Label Content = "TL"  x:Name="Urun4fiyatt" Margin="135,38,-0.4,8.6" Visibility="Visible" FontSize="10"/>
+                            <Image x:Name="Urun4silf" HorizontalAlignment="Left" Height="31" Margin="228,57,-0.2,0" VerticalAlignment="Top" Width="29" Source="Image/47-512.png" Visibility="Hidden"/>
+                            <Button Opacity="0" x:Name="urun4sil" Margin="228,57,-0.4,1.6" Click="urun4sil_Click" Visibility="Visible" />
+                        </Grid>
+                    </Border>
+                    <Border  Grid.Row="4" x:Name="Urun5" Visibility="Visible" Height="0" >
+
+                        <Grid >
+                            <Image HorizontalAlignment="Left" Height="81" Margin="0,0,0,-1" VerticalAlignment="Top" Width="100" x:Name="Urun5foto" Visibility="Visible"/>
+                            <Label Content = ""  x:Name="Urun5label" Margin="105,0,-0.2,50.6" Visibility="Visible"/>
+                            <Label Content = ""  x:Name="Urun5fiyat" Margin="100,38,-0.4,8.6" Visibility="Visible" FontSize="10"/>
+                            <Label Content = "TL"  x:Name="Urun5fiyatt" Margin="135,38,-0.4,8.6" Visibility="Visible" FontSize="10"/>
+                            <Image x:Name="Urun5silf" HorizontalAlignment="Left" Height="31" Margin="228,57,-0.2,0" VerticalAlignment="Top" Width="29" Source="Image/47-512.png" Visibility="Hidden"/>
+                            <Button Opacity="0" x:Name="urun5sil" Margin="228,57,-0.4,8.6" Click="urun5sil_Click" Visibility="Visible" />
+                        </Grid>
+                    </Border>
+
+                    <Border  Grid.Row="5" x:Name="Urun6" Visibility="Visible" Height="0" >
+
+                        <Grid >
+                            <Image HorizontalAlignment="Left" Height="81" Margin="0,0,0,-1" VerticalAlignment="Top" Width="100" x:Name="Urun6foto" Visibility="Visible"/>
+                            <Label Content = ""  x:Name="Urun6label" Margin="105,0,-0.2,50.6" Visibility="Visible"/>
+                            <Label Content = ""  x:Name="Urun6fiyat" Margin= "100,38,-0.4,8.6" Visibility="Visible" FontSize="10"/>
+                            <Label Content = "TL"  x:Name="Urun6fiyatt" Margin= "135,38,-0.4,8.6" Visibility="Visible" FontSize="10"/>
+                            <Image x:Name="Urun6silf" HorizontalAlignment="Left" Height="31" Margin="228,57,-0.2,0" VerticalAlignment="Top" Width="29" Source="Image/47-512.png" Visibility="Hidden"/>
+                            <Button Opacity="0" x:Name="urun6sil" Margin="228,57,-0.4,1.6" Click="urun6sil_Click" Visibility="Visible" />
+                        </Grid>
+                    </Border>
+
+                    <Border  Grid.Row="6" x:Name="Urun7" Visibility="Visible" Height="0" >
+
+                        <Grid >
+                            <Image HorizontalAlignment="Left" Height="81" Margin="0,0,0,-1" VerticalAlignment="Top" Width="100" x:Name="Urun7foto" Visibility="Visible"/>
+                            <Label Content = ""  x:Name="Urun7label" Margin="105,0,-0.2,50.6" Visibility="Visible"/>
+                            <Label Content = ""  x:Name="Urun7fiyat" Margin="100,38,-0.4,8.6" Visibility="Visible" FontSize="10"/>
+                            <Label Content = "TL"  x:Name="Urun7fiyatt" Margin="135,38,-0.4,8.6" Visibility="Visible" FontSize="10"/>
+                            <Image x:Name="Urun7silf" HorizontalAlignment="Left" Height="31" Margin="228,57,-0.2,0" VerticalAlignment="Top" Width="29" Source="Image/47-512.png" Visibility="Hidden"/>
+                            <Button Opacity="0" x:Name="urun7sil" Margin="228,57,-0.4,1.6" Click="urun7sil_Click" Visibility="Visible" />
+                        </Grid>
+                    </Border>
+
+                    <Border  Grid.Row="7" x:Name="Urun8" Visibility="Visible" Height="0" >
+
+                        <Grid >
+                            <Image HorizontalAlignment="Left" Height="81" Margin="0,0,0,-1" VerticalAlignment="Top" Width="100" x:Name="Urun8foto" Visibility="Visible"/>
+                            <Label Content = ""  x:Name="Urun8label" Margin="105,0,-0.2,50.6" Visibility="Visible"/>
+                            <Label Content = ""  x:Name="Urun8fiyat" Margin="100,38,-0.4,8.6" Visibility="Visible" FontSize="10"/>
+                            <Label Content = "TL"  x:Name="Urun8fiyatt" Margin="135,38,-0.4,8.6" Visibility="Visible" FontSize="10"/>
+                            <Image x:Name="Urun8silf" HorizontalAlignment="Left" Height="31" Margin="228,57,-0.2,0" VerticalAlignment="Top" Width="29" Source="Image/47-512.png" Visibility="Hidden"/>
+                            <Button Opacity="0" x:Name="Urun8sil" Margin="228,57,-0.4,9.6" Click="urun8sil_Click" Visibility="Visible" />
+                        </Grid>
+                    </Border>
+
+                    <Border  Grid.Row="8" x:Name="Urun9" Visibility="Visible" Height="0" >
+
+                        <Grid >
+                            <Image HorizontalAlignment="Left" Height="81" Margin="0,0,0,-1" VerticalAlignment="Top" Width="100" x:Name="Urun9foto" Visibility="Visible"/>
+                            <Label Content = ""  x:Name="Urun9label" Margin="105,0,-0.2,50.6" Visibility="Visible"/>
+                            <Label Content = ""  x:Name="Urun9fiyat" Margin="100,38,-0.4,8.6" Visibility="Visible" FontSize="10"/>
+                            <Label Content = "TL"  x:Name="Urun9fiyatt" Margin="135,38,-0.4,8.6" Visibility="Visible" FontSize="10"/>
+                            <Image x:Name="Urun9silf" HorizontalAlignment="Left" Height="31" Margin="228,57,-0.2,0" VerticalAlignment="Top" Width="29" Source="Image/47-512.png" Visibility="Hidden"/>
+                            <Button Opacity="0" x:Name="Urun9sil" Margin="228,57,-0.4,8.6" Click="urun9sil_Click" Visibility="Visible" />
+                        </Grid>
+                    </Border>
+
+                    <Border  Grid.Row="9" x:Name="Urun10" Visibility="Visible" Height="0" >
+
+                        <Grid >
+                            <Image HorizontalAlignment="Left" Height="81" Margin="0,0,0,-1" VerticalAlignment="Top" Width="100" x:Name="Urun10foto" Visibility="Visible"/>
+                            <Label Content = ""  x:Name="Urun10label" Margin="105,0,-0.2,50.6" Visibility="Visible"/>
+                            <Label Content = ""  x:Name="Urun10fiyat" Margin="100,38,-0.4,8.6" Visibility="Visible" FontSize="10"/>
+                            <Label Content = "TL"  x:Name="Urun10fiyatt" Margin="135,38,-0.4,8.6" Visibility="Visible" FontSize="10"/>
+                            <Image x:Name="Urun10silf" HorizontalAlignment="Left" Height="31" Margin="228,57,-0.2,0" VerticalAlignment="Top" Width="29" Source="Image/47-512.png" Visibility="Hidden"/>
+                            <Button Opacity="0" x:Name="Urun10sil" Margin="228,57,-0.4,1.6" Click="urun8sil_Click" Visibility="Visible" />
+                        </Grid>
+                    </Border>
+
+                    <Border  Grid.Row="10" x:Name="SatınAl" Visibility="Visible" Height="90" >
+
+                        <Grid >
+                            <Label Content = "TOPLAM FIYAT = "  x:Name="ToplamfiyatTL1" Margin="10,0,-0.0,50.6" Visibility="Visible" FontSize="14"/>
+                            <Label Content = ""  x:Name="Toplamfiyat" Margin="145,0,-0.0,50.6" Visibility="Visible" FontSize="14"/>
+                            <Label Content = "         TL"  x:Name="ToplamfiyatTL" Margin="205,0,-0.0,50.6" Visibility="Visible" FontSize="14"/>
+                            <Button Content="SATIN AL" HorizontalAlignment="Left" Margin="150,44,0,0" VerticalAlignment="Top" Width="111" Height="23" Click="satinal_Click"/>
+
+                        </Grid>
+                    </Border>
+
+
+                </Grid>
+
+            </Border>
+
+            <!--SATIN AL-->
+            <Border  Grid.Row="4" x:Name="Satınal" Visibility="Visible" Height="0" >
+                <Grid Visibility="Visible" x:Name="SatınalGrid">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                    </Grid.RowDefinitions>
+                    <Border  Grid.Row="0" x:Name="KrediKartı" Visibility="Visible">
+                        <Grid>
+                            <TextBox TextWrapping="Wrap" x:Name="kartno" Text="" Margin="19,57,36.6,112" MaxLength="16"/>
+                            <TextBox TextWrapping="Wrap" x:Name="ay" Margin="149,124,97.6,45" MaxLength="2"/>
+                            <TextBox TextWrapping="Wrap" x:Name="cvv" Margin="19,124,176.6,45" MaxLength="3"/>
+                            <TextBox TextWrapping="Wrap" x:Name="yıl" Text="" Margin="209,124,37.6,45" MaxLength="2"/>
+                            <Label Content=" Kart Numarası" HorizontalAlignment="Left" Margin="10,19,0,0" VerticalAlignment="Top"/>
+                            <Label Content=" CVV" HorizontalAlignment="Left" Margin="10,93,0,0" VerticalAlignment="Top"/>
+                            <Label Content=" SKT AY / YIL" HorizontalAlignment="Left" Margin="141,98,0,0" VerticalAlignment="Top"/>
+                            <Button Content="ÖDEME YAP" HorizontalAlignment="Left" Margin="174,171,0,0" VerticalAlignment="Top" Width="91" x:Name="odeme" Click="odeme_Click"/>
+                        </Grid>
+                    </Border>
+                </Grid>
+            </Border>
+            <!--ANA MENÜ-->
+            <Border  Grid.Row="1" x:Name="AnaMenu" Visibility="Hidden">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="0" x:Name="grd_submenu12"/>
+                        <RowDefinition Height="0" x:Name="grd_submenu11"/>
+                        <RowDefinition Height="0" x:Name="grd_submenu1" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="0" x:Name="grd_submenu21"/>
+                        <RowDefinition Height="0" x:Name="grd_submenu22"/>
+                        <RowDefinition Height="0" x:Name="grd_submenu2"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="0" x:Name="grd_submenu3"/>
+                    </Grid.RowDefinitions>
+                    <!--submenu1-->
+                    <Border  Grid.Row="2"  x:Name="submenu1">
+                        <Grid Background="#f6f6f6" >
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="37"/>
+                                <RowDefinition Height="0" x:Name="grd_AnaParça"/>
+                                <RowDefinition Height="37"/>
+                                <RowDefinition Height="0" x:Name="grd_Depo"/>
+                                <!--134-->
+                                <RowDefinition Height="37"/>
+                                <RowDefinition Height="0" x:Name="grd_Pc"/>
+                                <!--157-->
+                                <RowDefinition Height="37"/>
+                                <RowDefinition Height="0" x:Name="grd_Yazılım"/>
+                                <!--70-->
+                            </Grid.RowDefinitions>
+                            <!--Ana Parçalar-->
+                            <Border Grid.Row="0">
+                                <DockPanel>
+                                    <Button  Width="35" Click="Button_Click" x:Name="AnaArtma" Background="{x:Null}" BorderBrush="{x:Null}">
+                                        <Image Source="/İtopya;component/Image/plus.png" Width="21"></Image>
+                                    </Button>
+                                    <Button Content="Ana Parçalar" Background="{x:Null}" Width="243"/>
+                                </DockPanel>
+                            </Border>
+                            <Border Grid.Row="1" x:Name="ParcaMenu" Visibility="Hidden">
+                                <StackPanel>
+                                    <Button Content="İşlemci" Background="{x:Null}" Margin="33,0,0,0" x:Name="islemcibuton" Click="islemcibuton_Click"/>
+                                    <Button Content="Anakart" Background="{x:Null}" Margin="33,0,0,0" x:Name="anakartbuton" Click="anakartbuton_Click"/>
+                                    <Button Content="Ram" Background="{x:Null}" Margin="33,0,0,0" x:Name="rambuton" Click="rambuton_Click"/>
+                                    <Button Content="Ekran Kartı" Background="{x:Null}" Margin="33,0,0,0" x:Name="ekrankartibuton" Click="ekrankartibuton_Click"/>
+                                    <Button Content="Soğutucular" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Bilgisayar Kasaları" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Power Supply/PSU" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Ses Kartı" Background="{x:Null}" Margin="33,0,0,0"/>
+                                </StackPanel>
+                            </Border>
+                            <!--DEPOLAMA-->
+                            <Border Grid.Row="2">
+                                <DockPanel>
+                                    <Button  Width="35" x:Name="DepoArtma" Click="DepoArtma_Click" BorderBrush="{x:Null}" Background="{x:Null}" >
+                                        <Image Source="/İtopya;component/Image/plus.png" Width="21"></Image>
+                                    </Button>
+                                    <Button Content="Depolama" Background="{x:Null}" ></Button>
+                                </DockPanel>
+                            </Border>
+                            <Border Grid.Row="3" x:Name="DepoMenu" Visibility="Hidden">
+                                <StackPanel>
+                                    <Button Content="HardDisk" Background="{x:Null}" Margin="33,0,0,0" x:Name="harddiskbuton" Click="harddiskbuton_Click"/>
+                                    <Button Content="SSD" Background="{x:Null}" Margin="33,0,0,0" x:Name="ssdbuton" Click="ssdbuton_Click"/>
+                                    <Button Content="Harici Disk" Background="{x:Null}" Margin="33,0,0,0" x:Name="haricidiskbuton" Click="haricisdiskbuton_Click"/>
+                                    <Button Content="DVD/Blu-Ray" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="USB Bellek" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Nas Çözümleri" Background="{x:Null}" Margin="33,0,0,0"/>
+                                </StackPanel>
+                            </Border>
+                            <!--Pc Aksesuarları-->
+                            <Border Grid.Row="4">
+                                <DockPanel>
+                                    <Button  Width="35" x:Name="PcArtma" Click="PcArtma_Click" Background="{x:Null}" BorderBrush="{x:Null}">
+                                        <Image Source="/İtopya;component/Image/plus.png" Width="21"></Image>
+                                    </Button>
+                                    <Button Content="Bilgisyar Aksesuarları" Background="{x:Null}" ></Button>
+                                </DockPanel>
+                            </Border>
+                            <Border Grid.Row="5" x:Name="PcMenu" Visibility="Hidden">
+                                <StackPanel>
+                                    <Button Content="Kasa Aydınlatma" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="RGB Kontrolcü" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="SLİ Köprüsü" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Ekran Kartı Aksesuarları" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Kompresör" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="USB Çoklayıcı" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Kesintisiz Güç Kaynağı" Background="{x:Null}" Margin="33,0,0,0"/>
+                                </StackPanel>
+                            </Border>
+                            <!--Yazılım-->
+                            <Border Grid.Row="6">
+                                <DockPanel>
+                                    <Button  Width="35" x:Name="YazılımArtma" Click="YazılımArtma_Click" BorderBrush="{x:Null}" Foreground="{x:Null}" Background="{x:Null}" >
+                                        <Image Source="/İtopya;component/Image/plus.png" Width="21"></Image>
+                                    </Button>
+                                    <Button Content="Yazılım" Background="{x:Null}"></Button>
+                                </DockPanel>
+                            </Border>
+                            <Border Grid.Row="7" x:Name="YazMenu" Visibility="Hidden">
+                                <StackPanel>
+                                    <Button Content="İşletim Sistemleri" Background="{x:Null}" Margin="33,0,0,0" x:Name="isletimsistemleributon" Click="isletimsistemleributon_Click"/>
+                                    <Button Content="Güvenlik Yazılımları" Background="{x:Null}" Margin="33,0,0,0" x:Name="guvenlikyazilimlaributon" Click="guvenlikyazilimlaributon_Click"/>
+                                    <Button Content="Office Yazılımları" Background="{x:Null}" Margin="33,0,0,0" x:Name="ofisyazilimbuton" Click="ofisyazilimbuton_Click"/>
+                                </StackPanel>
+                            </Border>
+                        </Grid>
+                    </Border>
+                    <!--SUBMENU1.1-->
+                    <Border Grid.Row="3">
+                        <Grid Background="#f6f6f6">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="37"/>
+                                <RowDefinition Height="0" x:Name="grd_Masa"/>
+                                <RowDefinition Height="37"/>
+                                <RowDefinition Height="0" x:Name="grd_Notebook"/>
+                                <RowDefinition Height="37"/>
+                                <RowDefinition Height="0" x:Name="grd_Note"/>
+                                <RowDefinition Height="37"/>
+                                <RowDefinition Height="0" x:Name="grd_Yazılım1"/>
+                            </Grid.RowDefinitions>
+                            <!--Masaüstü bilgisayarlar-->
+                            <Border Grid.Row="0">
+                                <DockPanel>
+                                    <Button  Width="35"  x:Name="Masaüstü" Click="Masaüstü_Click" Background="{x:Null}" BorderBrush="{x:Null}">
+                                        <Image Source="/İtopya;component/Image/plus.png" Width="21"></Image>
+                                    </Button>
+                                    <Button Content="Masaüstü Bilgisayarlar" Background="{x:Null}" Width="243"/>
+                                </DockPanel>
+                            </Border>
+                            <Border Grid.Row="1" x:Name="MasaMenu" Visibility="Hidden">
+                                <StackPanel>
+                                    <Button Content="Masaüstü Bilgisayar" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Gaming Bilgisayar" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="All İn One Bilgisayar" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Mini Bilgisayar" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Hazır Sistemler" Background="{x:Null}" Margin="33,0,0,0"/>
+                                </StackPanel>
+                            </Border>
+                            <!--Notebooklar-->
+                            <Border Grid.Row="2">
+                                <DockPanel>
+                                    <Button  Width="35" x:Name="NotebookArtma" Click="NotebookArtma_Click" BorderBrush="{x:Null}" Background="{x:Null}" >
+                                        <Image Source="/İtopya;component/Image/plus.png" Width="21"></Image>
+                                    </Button>
+                                    <Button Content="Notebooklar" Background="{x:Null}" ></Button>
+                                </DockPanel>
+                            </Border>
+                            <Border Grid.Row="3" x:Name="NotebookMenu" Visibility="Hidden">
+                                <StackPanel>
+                                    <Button Content="Notebook" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Gaming Notebook" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Dokunmatik Notebooklar" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Workstation Notebook" Background="{x:Null}" Margin="33,0,0,0"/>
+
+                                </StackPanel>
+                            </Border>
+                            <!--Notebook Aksesuarları-->
+                            <Border Grid.Row="4">
+                                <DockPanel>
+                                    <Button  Width="35" x:Name="NoteArtma" Click="NoteArtma_Click" Background="{x:Null}" BorderBrush="{x:Null}">
+                                        <Image Source="/İtopya;component/Image/plus.png" Width="21"></Image>
+                                    </Button>
+                                    <Button Content="Notebook Aksesuarları" Background="{x:Null}" ></Button>
+                                </DockPanel>
+                            </Border>
+                            <Border Grid.Row="5" x:Name="NoteMenu" Visibility="Hidden">
+                                <StackPanel>
+                                    <Button Content="Notebook Soğutucuları" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Çantalar" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Kesintisiz Güç Kaynakları" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Harici Depolar" Background="{x:Null}" Margin="33,0,0,0"/>
+                                </StackPanel>
+                            </Border>
+                            <!--Yazılım-->
+                            <Border Grid.Row="6">
+                                <DockPanel>
+                                    <Button  Width="35" x:Name="YazılımArtma1" Click="YazılımArtma1_Click" BorderBrush="{x:Null}" Background="{x:Null}" >
+                                        <Image Source="/İtopya;component/Image/plus.png" Width="21"></Image>
+                                    </Button>
+                                    <Button Content="Yazılım" Background="{x:Null}"></Button>
+                                </DockPanel>
+                            </Border>
+                            <Border Grid.Row="7" x:Name="YazMenu1" Visibility="Hidden">
+                                <StackPanel>
+                                    <Button Content="İşletim Sistemleri" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Güvenlik Yazılımları" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Office Yazılımları" Background="{x:Null}" Margin="33,0,0,0"/>
+                                </StackPanel>
+                            </Border>
+                        </Grid>
+                    </Border>
+                    <!--submenu1.2-->
+                    <Border Grid.Row="1">
+                        <Grid Background="#f6f6f6" >
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="37"/>
+                                <RowDefinition Height="0" x:Name="grd_Gaming"/>
+                                <RowDefinition Height="37"/>
+                                <RowDefinition Height="0" x:Name="grd_Aksesuar"/>
+                                <RowDefinition Height="37"/>
+                                <RowDefinition Height="0" x:Name="grd_Konsol"/>
+                                <RowDefinition Height="37"/>
+                                <RowDefinition Height="0" x:Name="grd_Oyunlar"/>
+                            </Grid.RowDefinitions>
+                            <!--Gaming Bilgisayar-->
+                            <Border Grid.Row="0">
+                                <DockPanel>
+                                    <Button  Width="35"  x:Name="GamingArtma" Click="GamingArtma_Click" Background="{x:Null}" BorderBrush="{x:Null}">
+                                        <Image Source="/İtopya;component/Image/plus.png" Width="21"></Image>
+                                    </Button>
+                                    <Button Content="Gaming Bilgisayar" Background="{x:Null}" Width="224"/>
+                                </DockPanel>
+                            </Border>
+                            <Border Grid.Row="1" x:Name="GamingMenu" Visibility="Hidden">
+                                <StackPanel>
+                                    <Button Content="Gaming PC" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Gaming Notebook" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Gaming Monitor" Background="{x:Null}" Margin="33,0,0,0"/>
+
+                                </StackPanel>
+                            </Border>
+                            <!--Gaming Aksesuar-->
+                            <Border Grid.Row="2">
+                                <DockPanel>
+                                    <Button  Width="35" x:Name="GaksesuarArtma" Click="GaksesuarArtma_Click" BorderBrush="{x:Null}" Background="{x:Null}" >
+                                        <Image Source="/İtopya;component/Image/plus.png" Width="21"></Image>
+                                    </Button>
+                                    <Button Content="Gaming Aksesuar" Background="{x:Null}" ></Button>
+                                </DockPanel>
+                            </Border>
+                            <Border Grid.Row="3" x:Name="AksesuarMenu" Visibility="Hidden">
+                                <StackPanel>
+                                    <Button Content="Oyuncu Ekipmanları" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="GamePad" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Görüntü Aktarıcı Kaydedici" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Yayın Perdeleri" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Oyuncu Gözlükleri" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Oyuncu Koltukları" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Gaming Aksesuarlar" Background="{x:Null}" Margin="33,0,0,0"/>
+                                </StackPanel>
+                            </Border>
+                            <!--Gaming Konsol-->
+                            <Border Grid.Row="4">
+                                <DockPanel>
+                                    <Button  Width="35" x:Name="KonsolArtma" Click="KonsolArtma_Click" Background="{x:Null}" BorderBrush="{x:Null}">
+                                        <Image Source="/İtopya;component/Image/plus.png" Width="21"></Image>
+                                    </Button>
+                                    <Button Content="Gaming Konsol" Background="{x:Null}" ></Button>
+                                </DockPanel>
+                            </Border>
+                            <Border Grid.Row="5" x:Name="KonsolMenu" Visibility="Hidden">
+                                <StackPanel>
+                                    <Button Content="Arcade Konsol" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Xbox One" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Playstiton 4" Background="{x:Null}" Margin="33,0,0,0"/>
+
+                                </StackPanel>
+                            </Border>
+                            <!--Oyunlar-->
+                            <Border Grid.Row="6">
+                                <DockPanel>
+                                    <Button  Width="35" x:Name="OyunArtma" Click="OyunArtma_Click" BorderBrush="{x:Null}" Background="{x:Null}" >
+                                        <Image Source="/İtopya;component/Image/plus.png" Width="21"></Image>
+                                    </Button>
+                                    <Button Content="Oyunlar" Background="{x:Null}"></Button>
+                                </DockPanel>
+                            </Border>
+                            <Border Grid.Row="7" x:Name="OyunMenu" Visibility="Hidden">
+                                <StackPanel>
+                                    <Button Content="PC Oyunları" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Xbox One Oyunları" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="PS4 oyunları" Background="{x:Null}" Margin="33,0,0,0"/>
+                                </StackPanel>
+                            </Border>
+                        </Grid>
+                    </Border>
+                    <!--submenu2-->
+                    <Border Grid.Row="7">
+                        <Grid Background="#f6f6f6" >
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="37"/>
+                                <RowDefinition Height="0" x:Name="grd_pcNote"/>
+                                <RowDefinition Height="37"/>
+                                <RowDefinition Height="0" x:Name="grd_gAksesuar"/>
+                                <RowDefinition Height="37"/>
+                                <RowDefinition Height="0" x:Name="grd_Aksesuar1"/>
+                                <RowDefinition Height="37"/>
+                                <RowDefinition Height="0" x:Name="grd_Yazıcı"/>
+                            </Grid.RowDefinitions>
+                            <!--pcnote-->
+                            <Border Grid.Row="0">
+                                <DockPanel>
+                                    <Button  Width="35"  x:Name="PcnoteArtma" Click="PcnoteArtma_Click" Background="{x:Null}" BorderBrush="{x:Null}">
+                                        <Image Source="/İtopya;component/Image/plus.png" Width="21"></Image>
+                                    </Button>
+                                    <Button Content="Bilgisayar ve Notebook" Background="{x:Null}" Width="241"/>
+                                </DockPanel>
+                            </Border>
+                            <Border Grid.Row="1" x:Name="PcnoteMenu" Visibility="Hidden">
+                                <StackPanel>
+                                    <Button Content="Monitor" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Klavye" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Mause" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Mause Pad" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Kulaklık" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Mikrofon" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Ses Sistemi" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Kamera" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Kesintisiz Güç Kaynağı" Background="{x:Null}" Margin="33,0,0,0"/>
+                                </StackPanel>
+                            </Border>
+                            <!--Gaming Aksesuar-->
+                            <Border Grid.Row="2">
+                                <DockPanel>
+                                    <Button  Width="35" x:Name="GaksesuarArtma1" Click="GaksesuarArtma1_Click" BorderBrush="{x:Null}" Background="{x:Null}" >
+                                        <Image Source="/İtopya;component/Image/plus.png" Width="21"></Image>
+                                    </Button>
+                                    <Button Content="Gaming Aksesuar" Background="{x:Null}" ></Button>
+                                </DockPanel>
+                            </Border>
+                            <Border Grid.Row="3" x:Name="AksesuarMenu1" Visibility="Hidden">
+                                <StackPanel>
+                                    <Button Content="Kulaklıklık Standı" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Mause Kablo Tutucu" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="GamePad" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Görüntü Aktarıcı Kaydedici" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Yayın Perdeleri" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Oyuncu Gözlükleri" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Yayın Perdeleri" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Oyuncu Koltukları" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Gaming Aksesuarlar" Background="{x:Null}" Margin="33,0,0,0"/>
+                                </StackPanel>
+                            </Border>
+                            <!--Aksesuar-->
+                            <Border Grid.Row="4">
+                                <DockPanel>
+                                    <Button  Width="35" x:Name="AksesuarArtma" Click="AksesuarArtma_Click" Background="{x:Null}" BorderBrush="{x:Null}">
+                                        <Image Source="/İtopya;component/Image/plus.png" Width="21"></Image>
+                                    </Button>
+                                    <Button Content="Aksesuar" Background="{x:Null}" ></Button>
+                                </DockPanel>
+                            </Border>
+                            <Border Grid.Row="5" x:Name="AksMenu" Visibility="Hidden">
+                                <StackPanel>
+                                    <Button Content="Kablolar" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="USB Çoklayıcı" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Notebook Soğutucu" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Telefon Şarj ve Yedekleme" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Taşınabilir Şarj Pilleri" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Çantalar" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Kart Okuyucu" Background="{x:Null}" Margin="33,0,0,0"/>
+                                </StackPanel>
+                            </Border>
+                            <!--Yazıcı ve Tarayıcılar-->
+                            <Border Grid.Row="6">
+                                <DockPanel>
+                                    <Button  Width="35" x:Name="YazArtma" Click="YazArtma_Click" BorderBrush="{x:Null}" Background="{x:Null}" >
+                                        <Image Source="/İtopya;component/Image/plus.png" Width="21"></Image>
+                                    </Button>
+                                    <Button Content="Yazıcı ve Tarayıcılar" Background="{x:Null}"></Button>
+                                </DockPanel>
+                            </Border>
+                            <Border Grid.Row="7" x:Name="YazMenu2" Visibility="Hidden">
+                                <StackPanel>
+                                    <Button Content="Lazer Yazıcı" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Inkjet Yazıcı" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Nokta Vuruşlu Yazıcı" Background="{x:Null}" Margin="33,0,0,0"/>
+                                </StackPanel>
+                            </Border>
+                        </Grid>
+                    </Border>
+                    <!--submenu21-->
+                    <Border Grid.Row="5">
+                        <Grid Background="#f6f6f6" >
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="37"/>
+                                <RowDefinition Height="0" x:Name="grd_dahili"/>
+                                <RowDefinition Height="37"/>
+                                <RowDefinition Height="0" x:Name="grd_harici"/>
+                                <RowDefinition Height="37"/>
+                                <RowDefinition Height="0" x:Name="grd_Aksesuarlar"/>
+                            </Grid.RowDefinitions>
+                            <!--dahili-->
+                            <Border Grid.Row="0">
+                                <DockPanel>
+                                    <Button  Width="35"  x:Name="dahiliArtma" Click="dahiliArtma_Click" Background="{x:Null}" BorderBrush="{x:Null}">
+                                        <Image Source="/İtopya;component/Image/plus.png" Width="21"></Image>
+                                    </Button>
+                                    <Button Content="Dahili Disk" Background="{x:Null}" Width="241"/>
+                                </DockPanel>
+                            </Border>
+                            <Border Grid.Row="1" x:Name="dahiliMenu" Visibility="Hidden">
+                                <StackPanel>
+                                    <Button Content='3.5" Harddisk' Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content='2.5" NoteBook Disk' Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="SSHD Hibrit Disk" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Güvenlik Diskleri" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Nas Diskleri" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="DVDvBlu-Ray" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="SSD" Background="{x:Null}" Margin="33,0,0,0"/>
+
+                                </StackPanel>
+                            </Border>
+                            <!--Harici Disk-->
+                            <Border Grid.Row="2">
+                                <DockPanel>
+                                    <Button  Width="35" x:Name="HariciArtma" Click="HariciArtma_Click" BorderBrush="{x:Null}" Background="{x:Null}" >
+                                        <Image Source="/İtopya;component/Image/plus.png" Width="21"></Image>
+                                    </Button>
+                                    <Button Content="Harici Disk" Background="{x:Null}" ></Button>
+                                </DockPanel>
+                            </Border>
+                            <Border Grid.Row="3" x:Name="HariciMenu" Visibility="Hidden">
+                                <StackPanel>
+                                    <Button Content="Masaüstü Disk" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Taşınabilir Disk" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Nas Sistemleri" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Mack Disk" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Wiriless Disk" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="USB Bellek" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Flash Kart" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="DVDvBlu-Ray" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="SSD" Background="{x:Null}" Margin="33,0,0,0"/>
+                                </StackPanel>
+                            </Border>
+                            <!--Aksesuarlar-->
+                            <Border Grid.Row="4">
+                                <DockPanel>
+                                    <Button  Width="35" x:Name="AksesuarArtma1" Click="AksesuarArtma1_Click" Background="{x:Null}" BorderBrush="{x:Null}">
+                                        <Image Source="/İtopya;component/Image/plus.png" Width="21"></Image>
+                                    </Button>
+                                    <Button Content="Aksesuarlar" Background="{x:Null}" ></Button>
+                                </DockPanel>
+                            </Border>
+                            <Border Grid.Row="5" x:Name="AksesuarMenu2" Visibility="Hidden">
+                                <StackPanel>
+                                    <Button Content="Kart Okuyucu" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Disk Kutuları" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Kızaklar" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Kablolar" Background="{x:Null}" Margin="33,0,0,0"/>
+                                </StackPanel>
+                            </Border>
+                        </Grid>
+                    </Border>
+                    <!--submenu22-->
+                    <Border Grid.Row="6">
+                        <Grid Background="#f6f6f6" >
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="37"/>
+                                <RowDefinition Height="0" x:Name="grd_modem" />
+                                <RowDefinition Height="37"/>
+                                <RowDefinition Height="0" x:Name="grd_ağ"/>
+                                <RowDefinition Height="37"/>
+                                <RowDefinition Height="0" x:Name="grd_depolama"/>
+                                <RowDefinition Height="37"/>
+                                <RowDefinition Height="0" x:Name="grd_network"/>
+                            </Grid.RowDefinitions>
+                            <!--Modemler-->
+                            <Border Grid.Row="0">
+                                <DockPanel>
+                                    <Button  Width="35" x:Name="medemArtma" Click="medemArtma_Click" Background="{x:Null}" BorderBrush="{x:Null}">
+                                        <Image Source="/İtopya;component/Image/plus.png" Width="21"></Image>
+                                    </Button>
+                                    <Button Content="Modemler/Routher/AP" Background="{x:Null}" Width="243"/>
+                                </DockPanel>
+                            </Border>
+                            <Border Grid.Row="1" x:Name="modemMenu" Visibility="Hidden" Margin="0,0,0,37" Grid.RowSpan="2">
+                                <StackPanel>
+                                    <Button Content="Modem" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Acces Point/ Route" Background="{x:Null}" Margin="33,0,0,0"/>
+                                </StackPanel>
+                            </Border>
+                            <!--Ağ Genişleticiler-->
+                            <Border Grid.Row="2">
+                                <DockPanel>
+                                    <Button  Width="35" x:Name="ağArtma" Click="ağArtma_Click" BorderBrush="{x:Null}" Background="{x:Null}" >
+                                        <Image Source="/İtopya;component/Image/plus.png" Width="21"></Image>
+                                    </Button>
+                                    <Button Content="Ağ Genişleticiler" Background="{x:Null}" ></Button>
+                                </DockPanel>
+                            </Border>
+                            <Border Grid.Row="3" x:Name="ağMenu" Visibility="Hidden" Margin="0,0,0,37" Grid.RowSpan="2">
+                                <StackPanel>
+                                    <Button Content="Powerline Adaptör" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Wireless Adaptör" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Antenler" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Ethernet Kartları" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Switchler" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Bluetooth Adaptör" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Menzil Arttırıcı" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="3G/4G Adaptör" Background="{x:Null}" Margin="33,0,0,0"/>
+                                </StackPanel>
+                            </Border>
+                            <!--Depolama-->
+                            <Border Grid.Row="4">
+                                <DockPanel>
+                                    <Button  Width="35" x:Name="depoArtma" Click="depoArtma_Click" Background="{x:Null}" BorderBrush="{x:Null}">
+                                        <Image Source="/İtopya;component/Image/plus.png" Width="21"></Image>
+                                    </Button>
+                                    <Button Content="Depolama" Background="{x:Null}" ></Button>
+                                </DockPanel>
+                            </Border>
+                            <Border Grid.Row="5" x:Name="depoMenu" Visibility="Hidden" Margin="0,0,0,37" Grid.RowSpan="2">
+                                <StackPanel>
+                                    <Button Content="NAS Sistemleri" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="NAS Kutuları" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="NAS Diskeleri" Background="{x:Null}" Margin="33,0,0,0"/>
+
+                                </StackPanel>
+                            </Border>
+                            <!--nETWORK-->
+                            <Border Grid.Row="6">
+                                <DockPanel>
+                                    <Button  Width="35" x:Name="netArtma" Click="netArtma_Click" BorderBrush="{x:Null}" Foreground="{x:Null}" Background="{x:Null}" >
+                                        <Image Source="/İtopya;component/Image/plus.png" Width="21"></Image>
+                                    </Button>
+                                    <Button Content="Network Kamera" Background="{x:Null}"></Button>
+                                </DockPanel>
+                            </Border>
+                            <Border Grid.Row="7" x:Name="netMenu" Visibility="Hidden">
+                                <StackPanel>
+                                    <Button Content="IP Kamera" Background="{x:Null}" Margin="33,0,0,0"/>
+                                </StackPanel>
+                            </Border>
+                        </Grid>
+                    </Border>
+                    <!--submenu3-->
+                    <Border Grid.Row="9">
+                        <Grid Background="#f6f6f6" >
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="37"/>
+                                <RowDefinition Height="0" x:Name="grd_işletim"/>
+                                <RowDefinition Height="37"/>
+                                <RowDefinition Height="0" x:Name="grd_office"/>
+                                <RowDefinition Height="37"/>
+                                <RowDefinition Height="0" x:Name="grd_oyunlar"/>
+                                <RowDefinition Height="37"/>
+                                <RowDefinition Height="0" x:Name="grd_güvenlik"/>
+                            </Grid.RowDefinitions>
+                            <!--işetim sistemi-->
+                            <Border Grid.Row="0">
+                                <DockPanel>
+                                    <Button  Width="35"  x:Name="işletimArtma" Click="işletimArtma_Click" Background="{x:Null}" BorderBrush="{x:Null}">
+                                        <Image Source="/İtopya;component/Image/plus.png" Width="21"></Image>
+                                    </Button>
+                                    <Button Content="İşletim Sistemleri" Background="{x:Null}" Width="224"/>
+                                </DockPanel>
+                            </Border>
+                            <Border Grid.Row="1" x:Name="işletimMenu" Visibility="Hidden">
+                                <StackPanel>
+                                    <Button Content="Microsoft" Background="{x:Null}" Margin="33,0,0,0"/>
+                                </StackPanel>
+                            </Border>
+                            <!--office-->
+                            <Border Grid.Row="2">
+                                <DockPanel>
+                                    <Button  Width="35" x:Name="officeArtma" Click="officeArtma_Click" BorderBrush="{x:Null}" Background="{x:Null}" >
+                                        <Image Source="/İtopya;component/Image/plus.png" Width="21"></Image>
+                                    </Button>
+                                    <Button Content="Office Yazılımları" Background="{x:Null}" ></Button>
+                                </DockPanel>
+                            </Border>
+                            <Border Grid.Row="3" x:Name="officeMenu" Visibility="Hidden">
+                                <StackPanel>
+                                    <Button Content="Microsoft" Background="{x:Null}" Margin="33,0,0,0"/>
+                                </StackPanel>
+                            </Border>
+                            <!--Oyunlar-->
+                            <Border Grid.Row="4">
+                                <DockPanel>
+                                    <Button  Width="35" x:Name="OyunArtma1" Click="OyunArtma1_Click" BorderBrush="{x:Null}" Background="{x:Null}" >
+                                        <Image Source="/İtopya;component/Image/plus.png" Width="21"></Image>
+                                    </Button>
+                                    <Button Content="Oyunlar" Background="{x:Null}"></Button>
+                                </DockPanel>
+                            </Border>
+                            <Border Grid.Row="5" x:Name="OyunMenu1" Visibility="Hidden">
+                                <StackPanel>
+                                    <Button Content="PC Oyunları" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="PS4 oyunları" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Xbox One Oyunları" Background="{x:Null}" Margin="33,0,0,0"/>
+                                </StackPanel>
+                            </Border>
+                            <!--Güvenlik-->
+                            <Border Grid.Row="6">
+                                <DockPanel>
+                                    <Button  Width="35" x:Name="güvenlikArtma" Click="güvenlikArtma_Click" Background="{x:Null}" BorderBrush="{x:Null}">
+                                        <Image Source="/İtopya;component/Image/plus.png" Width="21"></Image>
+                                    </Button>
+                                    <Button Content="Güvenlik Yazılımları" Background="{x:Null}" ></Button>
+                                </DockPanel>
+                            </Border>
+                            <Border Grid.Row="7" x:Name="güvenlikMenu" Visibility="Hidden">
+                                <StackPanel>
+                                    <Button Content="Antivirüs" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="İnternet Security" Background="{x:Null}" Margin="33,0,0,0"/>
+                                    <Button Content="Total Security" Background="{x:Null}" Margin="33,0,0,0"/>
+
+                                </StackPanel>
+                            </Border>
+                        </Grid>
+                    </Border>
+
+                    <StackPanel Grid.Row="0">
+                        <StackPanel Orientation="Horizontal">
+                            <Button Background="{x:Null}" BorderBrush="{x:Null}" x:Name="PcParca" Click="PcParca_Click">
+                                <Image Source="Image/bilgisayarparcalari.png" Width="50"/>
+                            </Button>
+                            <Button Margin="40,0,0,0" Background="{x:Null}" BorderBrush="{x:Null}" x:Name="Bilgisayar" Click="Bilgisayar_Click">
+                                <Image Source="Image/bilgisayar.png" Width="50"/>
+                            </Button>
+                            <Button Margin="40,0,0,0" Background="{x:Null}" BorderBrush="{x:Null}" x:Name="Gaming" Click="Gaming_Click">
+                                <Image Source="Image/gaming-oyun.png" Width="50"/>
+                            </Button>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="Bilgisayar"></Label>
+                            <Label Content="Bilgisayar" Margin="33,0,0,0"></Label>
+                            <Label Content="Gaming/Oyun" Margin="22,0,0,0"></Label>
+                        </StackPanel>
+                        <StackPanel >
+                            <Label Content="Parçaları" Margin="0,-13,0,0"></Label>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel Grid.Row="4">
+                        <StackPanel Orientation="Horizontal">
+                            <Button Margin="0,10,0,0" Background="{x:Null}" BorderBrush="{x:Null}" x:Name="Cevre" Click="Cevre_Click">
+                                <Image Source="Image/cevre-birimleri.png" Width="50"/>
+                            </Button>
+                            <Button Margin="40,10,0,0" Background="{x:Null}" BorderBrush="{x:Null}" x:Name="Depolama" Click="Depolama_Click">
+                                <Image Source="Image/depolama-disk.png" Width="50"/>
+                            </Button>
+                            <Button Margin="40,10,0,0" Background="{x:Null}" BorderBrush="{x:Null}" x:Name="Network" Click="Network_Click">
+                                <Image Source="Image/network.png" Width="50"/>
+                            </Button>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="ÇevreBirimleri"></Label>
+                            <Label Content="Depolama/Disk" ></Label>
+                            <Label Content="Network" Margin="20,0,0,0"></Label>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel Grid.Row="8">
+                        <StackPanel Orientation="Horizontal" Margin="0,0,201,0">
+                            <Button Background="{x:Null}" BorderBrush="{x:Null}" x:Name="Yazılım" Click="Yazılım_Click">
+                                <Image Source="Image/yazilim.png" Width="50"/>
+                            </Button>
+                        </StackPanel>
+                        <StackPanel >
+                            <Label Content="Yazılım"></Label>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+            </Border >
+            <!--GİRİŞ YAP GRİDİ-->
+            <Border Background="#efefef" Grid.Row="2" Margin="2,0,0,0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="71*"/>
+                        <ColumnDefinition Width="184*"/>
+                    </Grid.ColumnDefinitions>
+                    <DockPanel Grid.Column="1">
+                        <Button Content="Kendin Topla" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="10" Width="75"/>
+                        <Button Content="Giriş Yap/Üye Ol" Margin="10,10,10,10" Background="{x:Null}" BorderBrush="#535353" FontSize="11"></Button>
+                    </DockPanel>
+                </Grid>
+            </Border>
+            <!--Header-->
+            <Border  Grid.Row="0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="129*"/>
+                        <ColumnDefinition Width="12*"/>
+                        <ColumnDefinition Width="116*"/>
+                    </Grid.ColumnDefinitions>
+                    <Border Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Margin="0,0,12.067,-0.2" >
+                        <Grid>
+                            <Image Source="Image/logo.png" Margin="4,0,0,0" MinWidth="125" MinHeight="40" MouseDown="Image_MouseDown_1"/>
+                            <Button Opacity="0" HorizontalAlignment="Left" Margin="4,18,-0.2,0" VerticalAlignment="Top" Width="125" Click="Button_Click_4" Height="38"/>
+
+                        </Grid>
+
+                    </Border>
+                    <Border Grid.Column="1" Grid.Row="0" Margin="0.2,0,-0.2,-0.2" Grid.ColumnSpan="2" >
+                        <Grid>
+                            <Image Source="Image/menubar.png" Margin="115,19,10.4,29.8" MouseDown="Image_MouseDown" x:Name="Hamburger"/>
+                            <Button Content="Sepet" HorizontalAlignment="Left" Margin="10,24,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_2"/>
+
+                        </Grid>
+                    </Border>
+                </Grid>
+            </Border>
+
+            <!--Mağaza Ana Sayfa-->
+            <Border  Grid.Row="5">
+                <Grid x:Name="Sayfa">
+
+                    <Grid HorizontalAlignment="Left" Height="800" VerticalAlignment="Top" Width="280" Background="White" Margin="0,0,0,-144" x:Name="Anakart" Visibility="Hidden">
+                        <Grid HorizontalAlignment="Left" Height="650" VerticalAlignment="Top" Width="280" Margin="0,0,0,-127">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="10"/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+
+                            <!--SLİDER-->
+
+
+                            <Border Grid.Column="0" Grid.Row="0"/>
+
+                            <!--İLK ÜRÜN-->
+
+                            <!--Picture-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <Image Margin="0,10,176,10.4" Source="/İtopya;component/Image/asus1.jpg"/>
+
+                            </Border>
+
+                            <!--İsim-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <TextBlock TextWrapping="Wrap" Text="ASUS Z390 ANAKART + CORSAIR H45 SIVI SOĞUTMA" Margin="103,10,10,9.8" FontSize="10"/>
+
+                            </Border>
+
+                            <!--Fiyat-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <TextBlock TextWrapping="Wrap" Margin="103,62,10,-42.2" FontSize="14"><Run Text="1024 TL"/><LineBreak/><Run Text="KDV DAHİL"/></TextBlock>
+
+                            </Border>
+
+                            <!--Özelleştir-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <Image Margin="188,70,10,32.8" Source="/İtopya;component/Image/sepetekle.png"/>
+
+                            </Border>
+
+                            <!--Özelleştir-Buton-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <Button Content="Button" Margin="191,68,10,34.8" Opacity="0" Click="Button_Click_1"/>
+
+                            </Border>
+
+                            <!--İKİNCİ ÜRÜN-->
+
+                            <!--Picture-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <Image Margin="0,10,179,10.4" Source="/İtopya;component/Image/asus2.jpg"/>
+
+                            </Border>
+
+                            <!--İsim-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <TextBlock TextWrapping="Wrap" Text="ASUS ROG MAXIMUS XI HERO WiFi Intel Z390 9th Gen Intel Soket 1151 DDR4 4400MHz(O.C.) HDMI DP RGB Anakart" Margin="103,10,10,9.8" FontSize="10"/>
+
+                            </Border>
+
+                            <!--Fiyat-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <TextBlock TextWrapping="Wrap" Margin="103,62,10,-42.2" FontSize="14"><Run Text="1036 TL"/><LineBreak/><Run Text="KDV DAHİL"/></TextBlock>
+
+                            </Border>
+
+                            <!--Özelleştir-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <Image Margin="188,70,10,32.8" Source="/İtopya;component/Image/sepetekle.png"/>
+
+                            </Border>
+
+                            <!--Özelleştir-Buton-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <Button Content="Button" Margin="191,68,10,34.8" Opacity="0" x:Name="Buton2urun" Click="Buton2urun_Click"/>
+
+                            </Border>
+
+                            <!--ÜÇÜNCÜ ÜRÜN-->
+
+                            <!--Picture-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <Image Margin="10,10,184,9.8" Source="/İtopya;component/Image/msi1.jpg"/>
+
+                            </Border>
+
+                            <!--İsim-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <TextBlock TextWrapping="Wrap" Text="MSI A320M PRO-M2 V2 AMD A320 Soket AM4 DDR4 3200MHz (OC) VGA DVI HDMI Anakart" Margin="103,10,10,9.8" FontSize="10"/>
+
+                            </Border>
+
+                            <!--Fiyat-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <TextBlock TextWrapping="Wrap" Margin="103,62,10,-42.2" FontSize="14"><Run Text="465 TL"/><LineBreak/><Run Text="KDV DAHİL"/></TextBlock>
+
+                            </Border>
+
+                            <!--Özelleştir-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <Image Margin="188,70,10,32.8" Source="/İtopya;component/Image/sepetekle.png"/>
+
+                            </Border>
+
+                            <!--Özelleştir-Buton-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <Button Content="Button" Margin="191,72,10,33.8" Opacity="0" Click="Buton7urun_Click"/>
+
+                            </Border>
+
+                            <!--DÖRDÜNCÜ ÜRÜN-->
+
+                            <!--Picture-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <Image Margin="0,10,179,9.6" Source="/İtopya;component/Image/msi2.jpg"/>
+
+                            </Border>
+
+                            <!--İsim-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <TextBlock TextWrapping="Wrap" Text="MSI H310M PRO-VDH PLUS Intel H310 8th Gen Intel Soket 1151 DDR4 2666MHz VGA DVI HDMI Anakart" Margin="103,10,10,9.8" FontSize="10"/>
+
+                            </Border>
+
+                            <!--Fiyat-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <TextBlock TextWrapping="Wrap" Margin="103,62,10,-42.2" FontSize="14"><Run Text="414 TL"/><LineBreak/><Run Text="KDV DAHİL"/></TextBlock>
+
+                            </Border>
+
+                            <!--Özelleştir-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <Image Margin="188,70,10,32.8" Source="/İtopya;component/Image/sepetekle.png"/>
+
+                            </Border>
+
+                            <!--Özelleştir-Buton-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <Button Content="Button" Margin="191,72,10,34.6" Opacity="0" Click="Buton8urun_Click" />
+
+                            </Border>
+
+                        </Grid>
+
+                    </Grid>
+                    <Grid HorizontalAlignment="Left" Height="644" VerticalAlignment="Top" Width="280" Background="White" Margin="0,0,0,-144" x:Name="Anasayfa" Visibility="Visible">
+                        <Grid HorizontalAlignment="Left" Height="627" VerticalAlignment="Top" Width="280" Margin="0,0,0,-127">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="100"/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+
+                            <!--SLİDER-->
+
+
+                            <Border Grid.Column="0" Grid.Row="0">
+                                <Image Margin="0,10,0,0" Source="/İtopya;component/Image/slider1.jpg"/>
+
+                            </Border>
+
+                            <!--İLK ÜRÜN-->
+
+                            <!--Picture-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <Image Margin="0,10,165,9.8" Source="/İtopya;component/Image/kasa2.jpg"/>
+
+                            </Border>
+
+                            <!--İsim-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <TextBlock TextWrapping="Wrap" Text="DH-i1/Intel i5 9400F/Asus DUAL 1660 Ti O6G/8GB DDR4/480GB SSD/Gaming Bilgisayar" Margin="103,10,10,9.8" FontSize="10"/>
+
+                            </Border>
+
+                            <!--Fiyat-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <TextBlock TextWrapping="Wrap" Margin="103,62,10,-42.2" FontSize="14"><Run Text="4699 TL"/><LineBreak/><Run Text="KDV DAHİL"/></TextBlock>
+
+                            </Border>
+
+                            <!--Özelleştir-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <Image Margin="179,64,0,32.8" Source="/İtopya;component/Image/sepetekle.png"/>
+
+                            </Border>
+
+                            <!--Özelleştir-Buton-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <Button Content="Button" Margin="191,68,10,34.8" Opacity="0" Click="Buton3urun_Click"/>
+
+                            </Border>
+
+                            <!--İKİNCİ ÜRÜN-->
+
+                            <!--Picture-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <Image Margin="0,10,165,9.8" Source="/İtopya;component/Image/kasa1.jpg"/>
+
+                            </Border>
+
+                            <!--İsim-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <TextBlock TextWrapping="Wrap" Text="SHARK-2316/Ryzen 3 2300X/MSI GTX 1650 GAMING X 4GB/8GB DDR4/1TB HDD/Gaming Bilgisayar" Margin="103,10,10,9.8" FontSize="10"/>
+
+                            </Border>
+
+                            <!--Fiyat-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <TextBlock TextWrapping="Wrap" Margin="103,62,10,-42.2" FontSize="14"><Run Text="3720 TL"/><LineBreak/><Run Text="KDV DAHİL"/></TextBlock>
+
+                            </Border>
+
+                            <!--Özelleştir-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <Image Margin="179,64,0,32.8" Source="/İtopya;component/Image/sepetekle.png"/>
+
+                            </Border>
+
+                            <!--Özelleştir-Buton-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <Button Content="Button" Margin="191,68,10,34.8" Opacity="0" Click="Buton4urun_Click"/>
+
+                            </Border>
+
+                            <!--ÜÇÜNCÜ ÜRÜN-->
+
+                            <!--Picture-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <Image Margin="10,10,184,9.8" Source="/İtopya;component/Image/klavye.jpg"/>
+
+                            </Border>
+
+                            <!--İsim-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <TextBlock TextWrapping="Wrap" Text="Steelseries Apex 150 RGB Türkçe Q Oyuncu Klavyesi" Margin="103,10,10,9.8" FontSize="10"/>
+
+                            </Border>
+
+                            <!--Fiyat-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <TextBlock TextWrapping="Wrap" Margin="103,62,10,-42.2" FontSize="14"><Run Text="299 TL"/><LineBreak/><Run Text="KDV DAHİL"/></TextBlock>
+
+                            </Border>
+
+                            <!--Özelleştir-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <Image Margin="188,70,10,32.8" Source="/İtopya;component/Image/sepetekle.png"/>
+
+                            </Border>
+
+                            <!--Özelleştir-Buton-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <Button Content="Button" Margin="191,72,10,33.8" Opacity="0" Click="Buton5urun_Click"/>
+
+                            </Border>
+
+                            <!--DÖRDÜNCÜ ÜRÜN-->
+
+                            <!--Picture-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <Image Margin="0,10,179,9.6" Source="/İtopya;component/Image/monitor.jpg"/>
+
+                            </Border>
+
+                            <!--İsim-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <TextBlock TextWrapping="Wrap" Text="AOC 24&quot; C24G1 2xHDMI DP VGA 144Hz 1MS Freesync Full HD Curved Gaming Monitör" Margin="103,10,10,9.8" FontSize="10"/>
+
+                            </Border>
+
+                            <!--Fiyat-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <TextBlock TextWrapping="Wrap" Margin="103,62,10,-42.2" FontSize="14"><Run Text="1550 TL"/><LineBreak/><Run Text="KDV DAHİL"/></TextBlock>
+
+                            </Border>
+
+                            <!--Özelleştir-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <Image Margin="188,70,10,32.8" Source="/İtopya;component/Image/sepetekle.png"/>
+
+                            </Border>
+
+                            <!--Özelleştir-Buton-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <Button Content="Button" Margin="191,72,10,34.6" Opacity="0" Click="Buton6urun_Click"/>
+
+                            </Border>
+
+                        </Grid>
+
+                    </Grid>
+                    <Grid HorizontalAlignment="Left" Height="800" VerticalAlignment="Top" Width="280" Background="White" Margin="0,0,0,-144" x:Name="EkranKarti" Visibility="Hidden">
+                        <Grid HorizontalAlignment="Left" Height="627" VerticalAlignment="Top" Width="280" Margin="0,0,0,-127">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="10"/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+
+                            <!--SLİDER-->
+
+
+                            <Border Grid.Column="0" Grid.Row="0"/>
+
+                            <!--İLK ÜRÜN-->
+
+                            <!--Picture-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <Image Margin="0,10,172,10" Source="/İtopya;component/Image/ekrankarti1.jpg"/>
+
+                            </Border>
+
+                            <!--İsim-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <TextBlock TextWrapping="Wrap" Text="GIGABYTE RX590 GAMING 8GB GDDR5 256Bit AMD Rdeon DX12 Ekran Kartı" Margin="103,10,10,9.8" FontSize="10"/>
+
+                            </Border>
+
+                            <!--Fiyat-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <TextBlock TextWrapping="Wrap" Margin="103,62,10,-42.2" FontSize="14"><Run Text="3149 TL"/><LineBreak/><Run Text="KDV DAHİL"/></TextBlock>
+
+                            </Border>
+
+                            <!--Özelleştir-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <Image Margin="188,70,10,32.8" Source="/İtopya;component/Image/sepetekle.png"/>
+
+                            </Border>
+
+                            <!--Özelleştir-Buton-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <Button Content="Button" Margin="191,68,10,34.8" Opacity="0"/>
+
+                            </Border>
+
+                            <!--İKİNCİ ÜRÜN-->
+
+                            <!--Picture-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <Image Margin="0,10,179,10.4" Source="/İtopya;component/Image/ekrankarti2.jpg"/>
+
+                            </Border>
+
+                            <!--İsim-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <TextBlock TextWrapping="Wrap" Text="Sapphire RX570 PULSE GDDR5 8GB 256Bit AMD Radeon DX12 Ekran Kartı" Margin="103,10,10,9.8" FontSize="10"/>
+
+                            </Border>
+
+                            <!--Fiyat-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <TextBlock TextWrapping="Wrap" Margin="103,62,10,-42.2" FontSize="14"><Run Text="2036 TL"/><LineBreak/><Run Text="KDV DAHİL"/></TextBlock>
+
+                            </Border>
+
+                            <!--Özelleştir-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <Image Margin="188,70,10,32.8" Source="/İtopya;component/Image/sepetekle.png"/>
+
+                            </Border>
+
+                            <!--Özelleştir-Buton-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <Button Content="Button" Margin="191,68,10,34.8" Opacity="0"/>
+
+                            </Border>
+
+                            <!--ÜÇÜNCÜ ÜRÜN-->
+
+                            <!--Picture-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <Image Margin="10,10,184,9.8" Source="/İtopya;component/Image/ekrankarti3.jpg"/>
+
+                            </Border>
+
+                            <!--İsim-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <TextBlock TextWrapping="Wrap" Text="Sapphire RX590 Nitro+ 8GB GDDR5 256Bit AMD Radeon DX12 Ekran Kartı" Margin="103,10,10,9.8" FontSize="10"/>
+
+                            </Border>
+
+                            <!--Fiyat-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <TextBlock TextWrapping="Wrap" Margin="103,62,10,-42.2" FontSize="14"><Run Text="1999 TL"/><LineBreak/><Run Text="KDV DAHİL"/></TextBlock>
+
+                            </Border>
+
+                            <!--Özelleştir-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <Image Margin="188,70,10,32.8" Source="/İtopya;component/Image/sepetekle.png"/>
+
+                            </Border>
+
+                            <!--Özelleştir-Buton-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <Button Content="Button" Margin="191,72,10,33.8" Opacity="0"/>
+
+                            </Border>
+
+                            <!--DÖRDÜNCÜ ÜRÜN-->
+
+                            <!--Picture-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <Image Margin="0,10,179,9.6" Source="/İtopya;component/Image/ekrankarti4.jpg"/>
+
+                            </Border>
+
+                            <!--İsim-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <TextBlock TextWrapping="Wrap" Text="MSI Geforce RTX 2060 GAMING Z 6GB 192Bit GDDR6 DX12 Ekran Kartı" Margin="103,10,10,9.8" FontSize="10"/>
+
+                            </Border>
+
+                            <!--Fiyat-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <TextBlock TextWrapping="Wrap" Margin="103,62,10,-42.2" FontSize="14"><Run Text="4140 TL"/><LineBreak/><Run Text="KDV DAHİL"/></TextBlock>
+
+                            </Border>
+
+                            <!--Özelleştir-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <Image Margin="188,70,10,32.8" Source="/İtopya;component/Image/sepetekle.png"/>
+
+                            </Border>
+
+                            <!--Özelleştir-Buton-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <Button Content="Button" Margin="191,72,10,34.6" Opacity="0"/>
+
+                            </Border>
+
+                        </Grid>
+
+                    </Grid>
+                    <Grid HorizontalAlignment="Left" Height="800" VerticalAlignment="Top" Width="280" Background="White" Margin="0,0,0,-144" x:Name="GuvenlikYazilimlari" Visibility="Hidden">
+                        <Grid HorizontalAlignment="Left" Height="627" VerticalAlignment="Top" Width="280" Margin="0,0,0,-127">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="10"/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+
+                            <!--SLİDER-->
+
+
+                            <Border Grid.Column="0" Grid.Row="0"/>
+
+                            <!--İLK ÜRÜN-->
+
+                            <!--Picture-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <Image Margin="0,10,172,10" Source="/İtopya;component/Image/GY1.png"/>
+
+                            </Border>
+
+                            <!--İsim-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <TextBlock TextWrapping="Wrap" Text="Bitdefender INTERNET SECURITY 2019 1 Kullanıcı 1 Yıl" Margin="103,10,10,9.8" FontSize="10"/>
+
+                            </Border>
+
+                            <!--Fiyat-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <TextBlock TextWrapping="Wrap" Margin="103,62,10,-42.2" FontSize="14"><Run Text="87 TL"/><LineBreak/><Run Text="KDV DAHİL"/></TextBlock>
+
+                            </Border>
+
+                            <!--Özelleştir-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <Image Margin="188,70,10,32.8" Source="/İtopya;component/Image/sepetekle.png"/>
+
+                            </Border>
+
+                            <!--Özelleştir-Buton-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <Button Content="Button" Margin="191,68,10,34.8" Opacity="0"/>
+
+                            </Border>
+
+                            <!--İKİNCİ ÜRÜN-->
+
+                            <!--Picture-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <Image Margin="0,10,179,10.4" Source="/İtopya;component/Image/GY2.png"/>
+
+                            </Border>
+
+                            <!--İsim-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <TextBlock TextWrapping="Wrap" Text="Bitdefender ANTIVIRUS PLUS 2019 1 Kullanıcı 1 Yıl" Margin="103,10,10,9.8" FontSize="10"/>
+
+                            </Border>
+
+                            <!--Fiyat-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <TextBlock TextWrapping="Wrap" Margin="103,62,10,-42.2" FontSize="14"><Run Text="75 TL"/><LineBreak/><Run Text="KDV DAHİL"/></TextBlock>
+
+                            </Border>
+
+                            <!--Özelleştir-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <Image Margin="188,70,10,32.8" Source="/İtopya;component/Image/sepetekle.png"/>
+
+                            </Border>
+
+                            <!--Özelleştir-Buton-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <Button Content="Button" Margin="191,68,10,34.8" Opacity="0"/>
+
+                            </Border>
+
+                            <!--ÜÇÜNCÜ ÜRÜN-->
+
+                            <!--Picture-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <Image Margin="10,10,184,9.8" Source="/İtopya;component/Image/GY3.jpg"/>
+
+                            </Border>
+
+                            <!--İsim-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <TextBlock TextWrapping="Wrap" Text="ESET NOD32 Internet Security V10 Kutu-1 Kullanıcı" Margin="103,10,10,9.8" FontSize="10"/>
+
+                            </Border>
+
+                            <!--Fiyat-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <TextBlock TextWrapping="Wrap" Margin="103,62,10,-42.2" FontSize="14"><Run Text="198 TL"/><LineBreak/><Run Text="KDV DAHİL"/></TextBlock>
+
+                            </Border>
+
+                            <!--Özelleştir-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <Image Margin="188,70,10,32.8" Source="/İtopya;component/Image/sepetekle.png"/>
+
+                            </Border>
+
+                            <!--Özelleştir-Buton-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <Button Content="Button" Margin="191,72,10,33.8" Opacity="0"/>
+
+                            </Border>
+
+                            <!--DÖRDÜNCÜ ÜRÜN-->
+
+                            <!--Picture-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <Image Margin="0,10,179,9.6" Source="/İtopya;component/Image/GY4.jpg"/>
+
+                            </Border>
+
+                            <!--İsim-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <TextBlock TextWrapping="Wrap" Text="KASPERSKY ANTIVIRUS 2016 TR 1 KULLANICI KUTU" Margin="103,10,10,9.8" FontSize="10"/>
+
+                            </Border>
+
+                            <!--Fiyat-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <TextBlock TextWrapping="Wrap" Margin="103,62,10,-42.2" FontSize="14"><Run Text="46 TL"/><LineBreak/><Run Text="KDV DAHİL"/></TextBlock>
+
+                            </Border>
+
+                            <!--Özelleştir-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <Image Margin="188,70,10,32.8" Source="/İtopya;component/Image/sepetekle.png"/>
+
+                            </Border>
+
+                            <!--Özelleştir-Buton-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <Button Content="Button" Margin="191,72,10,34.6" Opacity="0"/>
+
+                            </Border>
+
+                        </Grid>
+
+                    </Grid>
+                    <Grid HorizontalAlignment="Left" Height="644" VerticalAlignment="Top" Width="280" Background="White" Margin="0,0,0,-144" x:Name="Harddisk" Visibility="Hidden">
+                        <Grid HorizontalAlignment="Left" Height="627" VerticalAlignment="Top" Width="280" Margin="0,0,0,-127">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="10"/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+
+                            <!--SLİDER-->
+
+
+                            <Border Grid.Column="0" Grid.Row="0"/>
+
+                            <!--İLK ÜRÜN-->
+
+                            <!--Picture-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <Image Margin="0,10,172,10" Source="/İtopya;component/Image/harddisk1.jpg"/>
+
+                            </Border>
+
+                            <!--İsim-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <TextBlock TextWrapping="Wrap" Text="Seagate 3.5&quot; 1TB Barracuda Sata 3.0 7200Rpm 64MB 210Mb/s okuma Harddisk" Margin="103,10,10,9.8" FontSize="10"/>
+
+                            </Border>
+
+                            <!--Fiyat-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <TextBlock TextWrapping="Wrap" Margin="103,62,10,-42.2" FontSize="14"><Run Text="306 TL"/><LineBreak/><Run Text="KDV DAHİL"/></TextBlock>
+
+                            </Border>
+
+                            <!--Özelleştir-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <Image Margin="188,70,10,32.8" Source="/İtopya;component/Image/sepetekle.png"/>
+
+                            </Border>
+
+                            <!--Özelleştir-Buton-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <Button Content="Button" Margin="191,68,10,34.8" Opacity="0"/>
+
+                            </Border>
+
+                            <!--İKİNCİ ÜRÜN-->
+
+                            <!--Picture-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <Image Margin="0,10,179,10.4" Source="/İtopya;component/Image/harddisk2.jpg"/>
+
+                            </Border>
+
+                            <!--İsim-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <TextBlock TextWrapping="Wrap" Text="Seagate 8TB Enterprise Capacity Sata 3.0 7200Rpm 256MB Cache Hard Disk" Margin="103,10,10,9.8" FontSize="10"/>
+
+                            </Border>
+
+                            <!--Fiyat-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <TextBlock TextWrapping="Wrap" Margin="103,62,10,-42.2" FontSize="14"><Run Text="2342 TL"/><LineBreak/><Run Text="KDV DAHİL"/></TextBlock>
+
+                            </Border>
+
+                            <!--Özelleştir-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <Image Margin="188,70,10,32.8" Source="/İtopya;component/Image/sepetekle.png"/>
+
+                            </Border>
+
+                            <!--Özelleştir-Buton-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <Button Content="Button" Margin="191,68,10,34.8" Opacity="0"/>
+
+                            </Border>
+
+                            <!--ÜÇÜNCÜ ÜRÜN-->
+
+                            <!--Picture-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <Image Margin="10,10,184,9.8" Source="/İtopya;component/Image/harddisk3.jpg"/>
+
+                            </Border>
+
+                            <!--İsim-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <TextBlock TextWrapping="Wrap" Text="Seagate 3.5&quot; 12TB IronWolf Sata 3.0 7200Rpm 256MB NAS Harddisk" Margin="103,10,10,9.8" FontSize="10"/>
+
+                            </Border>
+
+                            <!--Fiyat-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <TextBlock TextWrapping="Wrap" Margin="103,62,10,-42.2" FontSize="14"><Run Text="3197 TL"/><LineBreak/><Run Text="KDV DAHİL"/></TextBlock>
+
+                            </Border>
+
+                            <!--Özelleştir-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <Image Margin="188,70,10,32.8" Source="/İtopya;component/Image/sepetekle.png"/>
+
+                            </Border>
+
+                            <!--Özelleştir-Buton-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <Button Content="Button" Margin="191,72,10,33.8" Opacity="0"/>
+
+                            </Border>
+
+                            <!--DÖRDÜNCÜ ÜRÜN-->
+
+                            <!--Picture-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <Image Margin="0,10,179,9.6" Source="/İtopya;component/Image/harddisk4.jpg"/>
+
+                            </Border>
+
+                            <!--İsim-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <TextBlock TextWrapping="Wrap" Text="Seagate Firecuda 3.5 2TB 7200Rpm Sata 3.0 + 8GB SSD 64MB 210MB/S SSHD Disk" Margin="103,10,10,9.8" FontSize="10"/>
+
+                            </Border>
+
+                            <!--Fiyat-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <TextBlock TextWrapping="Wrap" Margin="103,62,10,-42.2" FontSize="14"><Run Text="797 TL"/><LineBreak/><Run Text="KDV DAHİL"/></TextBlock>
+
+                            </Border>
+
+                            <!--Özelleştir-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <Image Margin="188,70,10,32.8" Source="/İtopya;component/Image/sepetekle.png"/>
+
+                            </Border>
+
+                            <!--Özelleştir-Buton-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <Button Content="Button" Margin="191,72,10,34.6" Opacity="0"/>
+
+                            </Border>
+
+                        </Grid>
+
+                    </Grid>
+                    <Grid HorizontalAlignment="Left" Height="800" VerticalAlignment="Top" Width="280" Background="White" Margin="0,0,0,-144" x:Name="HariciDisk" Visibility="Hidden">
+                        <Grid HorizontalAlignment="Left" Height="627" VerticalAlignment="Top" Width="280" Margin="0,0,0,-127" >
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="10"/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+
+                            <!--SLİDER-->
+
+
+                            <Border Grid.Column="0" Grid.Row="0"/>
+
+                            <!--İLK ÜRÜN-->
+
+                            <!--Picture-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <Image Margin="0,10,183,10.4" Source="/İtopya;component/Image/harici1.jpg"/>
+
+                            </Border>
+
+                            <!--İsim-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <TextBlock TextWrapping="Wrap" Text="Kingston 16GB USB3.1 Metal/Yeşil Usb Bellek" Margin="103,10,10,9.8" FontSize="10"/>
+
+                            </Border>
+
+                            <!--Fiyat-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <TextBlock TextWrapping="Wrap" Margin="103,62,10,-42.2" FontSize="14"><Run Text="306 TL"/><LineBreak/><Run Text="KDV DAHİL"/></TextBlock>
+
+                            </Border>
+
+                            <!--Özelleştir-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <Image Margin="188,70,10,32.8" Source="/İtopya;component/Image/sepetekle.png"/>
+
+                            </Border>
+
+                            <!--Özelleştir-Buton-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <Button Content="Button" Margin="191,68,10,34.8" Opacity="0"/>
+
+                            </Border>
+
+                            <!--İKİNCİ ÜRÜN-->
+
+                            <!--Picture-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <Image Margin="0,10,179,10.4" Source="/İtopya;component/Image/harici2.jpg"/>
+
+                            </Border>
+
+                            <!--İsim-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <TextBlock TextWrapping="Wrap" Text="KINGSTON 64GB Bolt Duo USB 3.1 Apple USB Bellek" Margin="103,10,10,9.8" FontSize="10"/>
+
+                            </Border>
+
+                            <!--Fiyat-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <TextBlock TextWrapping="Wrap" Margin="103,62,10,-42.2" FontSize="14"><Run Text="2342 TL"/><LineBreak/><Run Text="KDV DAHİL"/></TextBlock>
+
+                            </Border>
+
+                            <!--Özelleştir-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <Image Margin="188,70,10,32.8" Source="/İtopya;component/Image/sepetekle.png"/>
+
+                            </Border>
+
+                            <!--Özelleştir-Buton-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <Button Content="Button" Margin="191,68,10,34.8" Opacity="0"/>
+
+                            </Border>
+
+                            <!--ÜÇÜNCÜ ÜRÜN-->
+
+                            <!--Picture-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <Image Margin="10,10,184,9.8" Source="/İtopya;component/Image/harici3.jpg"/>
+
+                            </Border>
+
+                            <!--İsim-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <TextBlock TextWrapping="Wrap" Text="KINGSTON 32GB Bolt Duo USB 3.1 Apple USB Bellek" Margin="103,10,10,9.8" FontSize="10"/>
+
+                            </Border>
+
+                            <!--Fiyat-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <TextBlock TextWrapping="Wrap" Margin="103,62,10,-42.2" FontSize="14"><Run Text="3197 TL"/><LineBreak/><Run Text="KDV DAHİL"/></TextBlock>
+
+                            </Border>
+
+                            <!--Özelleştir-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <Image Margin="188,70,10,32.8" Source="/İtopya;component/Image/sepetekle.png"/>
+
+                            </Border>
+
+                            <!--Özelleştir-Buton-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <Button Content="Button" Margin="191,72,10,33.8" Opacity="0"/>
+
+                            </Border>
+
+                            <!--DÖRDÜNCÜ ÜRÜN-->
+
+                            <!--Picture-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <Image Margin="0,10,179,9.6" Source="/İtopya;component/Image/harici4.JPG"/>
+
+                            </Border>
+
+                            <!--İsim-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <TextBlock TextWrapping="Wrap" Text="WD 3,5&quot; 8TB My Cloud Home Gigabit Ethernet Kişisel Bulut Depolama Diski" Margin="103,10,10,9.8" FontSize="10"/>
+
+                            </Border>
+
+                            <!--Fiyat-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <TextBlock TextWrapping="Wrap" Margin="103,62,10,-42.2" FontSize="14"><Run Text="797 TL"/><LineBreak/><Run Text="KDV DAHİL"/></TextBlock>
+
+                            </Border>
+
+                            <!--Özelleştir-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <Image Margin="188,70,10,32.8" Source="/İtopya;component/Image/sepetekle.png"/>
+
+                            </Border>
+
+                            <!--Özelleştir-Buton-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <Button Content="Button" Margin="191,72,10,34.6" Opacity="0"/>
+
+                            </Border>
+
+                        </Grid>
+
+                    </Grid>
+                    <Grid HorizontalAlignment="Left" Height="644" VerticalAlignment="Top" Width="280" Background="White" Margin="0,0,0,-144" x:Name="İslemci" Visibility="Hidden">
+                        <Grid HorizontalAlignment="Left" Height="627" VerticalAlignment="Top" Width="280" Margin="0,0,0,-127">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="10"/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+
+                            <!--SLİDER-->
+
+
+                            <Border Grid.Column="0" Grid.Row="0"/>
+
+                            <!--İLK ÜRÜN-->
+
+                            <!--Picture-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <Image Margin="0,10,172,10" Source="/İtopya;component/Image/i7islemci.jpg"/>
+
+                            </Border>
+
+                            <!--İsim-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <TextBlock TextWrapping="Wrap" Text="Intel Core i7 9700K Soket 1151 3.6GHz 12MB Önbellek 8 Çekirdek 14nm İşlemci" Margin="103,10,10,9.8" FontSize="10"/>
+
+                            </Border>
+
+                            <!--Fiyat-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <TextBlock TextWrapping="Wrap" Margin="103,62,10,-42.2" FontSize="14"><Run Text="3149 TL"/><LineBreak/><Run Text="KDV DAHİL"/></TextBlock>
+
+                            </Border>
+
+                            <!--Özelleştir-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <Image Margin="188,70,10,32.8" Source="/İtopya;component/Image/sepetekle.png"/>
+
+                            </Border>
+
+                            <!--Özelleştir-Buton-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <Button Content="Button" Margin="191,68,10,34.8" Opacity="0"/>
+
+                            </Border>
+
+                            <!--İKİNCİ ÜRÜN-->
+
+                            <!--Picture-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <Image Margin="0,10,179,10.4" Source="/İtopya;component/Image/amd3.5gb.jpg"/>
+
+                            </Border>
+
+                            <!--İsim-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <TextBlock TextWrapping="Wrap" Text="AMD Ryzen 5 2600X Soket AM4 3.6GHz 19MB Önbellek 6 Çekirdek İşlemci" Margin="103,10,10,9.8" FontSize="10"/>
+
+                            </Border>
+
+                            <!--Fiyat-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <TextBlock TextWrapping="Wrap" Margin="103,62,10,-42.2" FontSize="14"><Run Text="1036 TL"/><LineBreak/><Run Text="KDV DAHİL"/></TextBlock>
+
+                            </Border>
+
+                            <!--Özelleştir-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <Image Margin="188,70,10,32.8" Source="/İtopya;component/Image/sepetekle.png"/>
+
+                            </Border>
+
+                            <!--Özelleştir-Buton-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <Button Content="Button" Margin="191,68,10,34.8" Opacity="0"/>
+
+                            </Border>
+
+                            <!--ÜÇÜNCÜ ÜRÜN-->
+
+                            <!--Picture-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <Image Margin="10,10,184,9.8" Source="/İtopya;component/Image/i5islemci.jpg"/>
+
+                            </Border>
+
+                            <!--İsim-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <TextBlock TextWrapping="Wrap" Text="Intel Core i5 9600K Soket 1151 3.7GHz 9MB Önbellek 6 Çekirdek 14nm İşlemci" Margin="103,10,10,9.8" FontSize="10"/>
+
+                            </Border>
+
+                            <!--Fiyat-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <TextBlock TextWrapping="Wrap" Margin="103,62,10,-42.2" FontSize="14"><Run Text="1999 TL"/><LineBreak/><Run Text="KDV DAHİL"/></TextBlock>
+
+                            </Border>
+
+                            <!--Özelleştir-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <Image Margin="188,70,10,32.8" Source="/İtopya;component/Image/sepetekle.png"/>
+
+                            </Border>
+
+                            <!--Özelleştir-Buton-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <Button Content="Button" Margin="191,72,10,33.8" Opacity="0"/>
+
+                            </Border>
+
+                            <!--DÖRDÜNCÜ ÜRÜN-->
+
+                            <!--Picture-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <Image Margin="0,10,179,9.6" Source="/İtopya;component/Image/i9islemci.jpg"/>
+
+                            </Border>
+
+                            <!--İsim-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <TextBlock TextWrapping="Wrap" Text="Intel Core i9 9900K Soket 1151 3.6 GHz 16 MB Önbellek 8 Çekirdek 16 thread 14nm İşlemci" Margin="103,10,10,9.8" FontSize="10"/>
+
+                            </Border>
+
+                            <!--Fiyat-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <TextBlock TextWrapping="Wrap" Margin="103,62,10,-42.2" FontSize="14"><Run Text="4140 TL"/><LineBreak/><Run Text="KDV DAHİL"/></TextBlock>
+
+                            </Border>
+
+                            <!--Özelleştir-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <Image Margin="188,70,10,32.8" Source="/İtopya;component/Image/sepetekle.png"/>
+
+                            </Border>
+
+                            <!--Özelleştir-Buton-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <Button Content="Button" Margin="191,72,10,34.6" Opacity="0"/>
+
+                            </Border>
+
+                        </Grid>
+
+                    </Grid>
+                    <Grid HorizontalAlignment="Left" Height="800" VerticalAlignment="Top" Width="280" Background="White" Margin="0,0,0,-144" x:Name="İsletimSistemleri" Visibility="Hidden">
+                        <Grid HorizontalAlignment="Left" Height="627" VerticalAlignment="Top" Width="280" Margin="0,0,0,-127">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="10"/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+
+                            <!--SLİDER-->
+
+
+                            <Border Grid.Column="0" Grid.Row="0"/>
+
+                            <!--İLK ÜRÜN-->
+
+                            <!--Picture-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <Image Margin="0,10,172,10" Source="/İtopya;component/Image/Isistemleri1.jpg"/>
+
+                            </Border>
+
+                            <!--İsim-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <TextBlock TextWrapping="Wrap" Text="Microsoft Windows 10 Pro 32/64Bit Türkçe Kutu" Margin="103,10,10,9.8" FontSize="10"/>
+
+                            </Border>
+
+                            <!--Fiyat-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <TextBlock TextWrapping="Wrap" Margin="103,62,10,-42.2" FontSize="14"><Run Text="1.562.65 TL"/><LineBreak/><Run Text="KDV DAHİL"/></TextBlock>
+
+                            </Border>
+
+                            <!--Özelleştir-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <Image Margin="188,70,10,32.8" Source="/İtopya;component/Image/sepetekle.png"/>
+
+                            </Border>
+
+                            <!--Özelleştir-Buton-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <Button Content="Button" Margin="191,68,10,34.8" Opacity="0"/>
+
+                            </Border>
+
+                            <!--İKİNCİ ÜRÜN-->
+
+                            <!--Picture-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <Image Margin="0,10,179,10.4" Source="/İtopya;component/Image/Isistemleri2.jpg"/>
+
+                            </Border>
+
+                            <!--İsim-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <TextBlock TextWrapping="Wrap" Text="Microsoft Windows 10 Home 32/64Bit Türkçe Kutu" Margin="103,10,10,9.8" FontSize="10"/>
+
+                            </Border>
+
+                            <!--Fiyat-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <TextBlock TextWrapping="Wrap" Margin="103,62,10,-42.2" FontSize="14"><Run Text="801.15 TL"/><LineBreak/><Run Text="KDV DAHİL"/></TextBlock>
+
+                            </Border>
+
+                            <!--Özelleştir-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <Image Margin="188,70,10,32.8" Source="/İtopya;component/Image/sepetekle.png"/>
+
+                            </Border>
+
+                            <!--Özelleştir-Buton-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <Button Content="Button" Margin="191,68,10,34.8" Opacity="0"/>
+
+                            </Border>
+
+                            <!--ÜÇÜNCÜ ÜRÜN-->
+
+                            <!--Picture-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <Image Margin="10,10,184,9.8" Source="/İtopya;component/Image/Isistemleri3.jpg"/>
+
+                            </Border>
+
+                            <!--İsim-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <TextBlock TextWrapping="Wrap" Text="Microsoft Windows 10 Home 64Bit İngilizce Oem" Margin="103,10,10,9.8" FontSize="10"/>
+
+                            </Border>
+
+                            <!--Fiyat-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <TextBlock TextWrapping="Wrap" Margin="103,62,10,-42.2" FontSize="14"><Run Text="914.19  TL"/><LineBreak/><Run Text="KDV DAHİL"/></TextBlock>
+
+                            </Border>
+
+                            <!--Özelleştir-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <Image Margin="188,70,10,32.8" Source="/İtopya;component/Image/sepetekle.png"/>
+
+                            </Border>
+
+                            <!--Özelleştir-Buton-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <Button Content="Button" Margin="191,72,10,33.8" Opacity="0"/>
+
+                            </Border>
+
+                            <!--DÖRDÜNCÜ ÜRÜN-->
+
+                            <!--Picture-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <Image Margin="0,10,179,9.6" Source="/İtopya;component/Image/Isistemleri4.jpg"/>
+
+                            </Border>
+
+                            <!--İsim-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <TextBlock TextWrapping="Wrap" Text="Microsoft Windows 10 Pro 64Bit Türkçe Oem" Margin="103,10,10,9.8" FontSize="10"/>
+
+                            </Border>
+
+                            <!--Fiyat-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <TextBlock TextWrapping="Wrap" Margin="103,62,10,-42.2" FontSize="14"><Run Text="1.086.71  TL"/><LineBreak/><Run Text="KDV DAHİL"/></TextBlock>
+
+                            </Border>
+
+                            <!--Özelleştir-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <Image Margin="188,70,10,32.8" Source="/İtopya;component/Image/sepetekle.png"/>
+
+                            </Border>
+
+                            <!--Özelleştir-Buton-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <Button Content="Button" Margin="191,72,10,34.6" Opacity="0"/>
+
+                            </Border>
+
+                        </Grid>
+
+                    </Grid>
+                    <Grid HorizontalAlignment="Left" Height="800" VerticalAlignment="Top" Width="280" Background="White" Margin="0,0,0,-144" x:Name="OfisYazilim" Visibility="Hidden">
+                        <Grid HorizontalAlignment="Left" Height="627" VerticalAlignment="Top" Width="280" Margin="0,0,0,-127">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="10"/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+
+                            <!--SLİDER-->
+
+
+                            <Border Grid.Column="0" Grid.Row="0"/>
+
+                            <!--İLK ÜRÜN-->
+
+                            <!--Picture-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <Image Margin="0,10,172,10" Source="/İtopya;component/Image/OY1.jpg"/>
+
+                            </Border>
+
+                            <!--İsim-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <TextBlock TextWrapping="Wrap" Text="Microsoft Office Home and Bus. 2019 Türkçe Kutu" Margin="103,10,10,9.8" FontSize="10"/>
+
+                            </Border>
+
+                            <!--Fiyat-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <TextBlock TextWrapping="Wrap" Margin="103,62,10,-42.2" FontSize="14"><Run Text="1.943.39 TL"/><LineBreak/><Run Text="KDV DAHİL"/></TextBlock>
+
+                            </Border>
+
+                            <!--Özelleştir-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <Image Margin="188,70,10,32.8" Source="/İtopya;component/Image/sepetekle.png"/>
+
+                            </Border>
+
+                            <!--Özelleştir-Buton-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <Button Content="Button" Margin="191,68,10,34.8" Opacity="0"/>
+
+                            </Border>
+
+                            <!--İKİNCİ ÜRÜN-->
+
+                            <!--Picture-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <Image Margin="0,10,179,10.4" Source="/İtopya;component/Image/OY2.jpg"/>
+
+                            </Border>
+
+                            <!--İsim-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <TextBlock TextWrapping="Wrap" Text="Microsoft Office 2016 Ev ve İş Türkçe Kutu" Margin="103,10,10,9.8" FontSize="10"/>
+
+                            </Border>
+
+                            <!--Fiyat-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <TextBlock TextWrapping="Wrap" Margin="103,62,10,-42.2" FontSize="14"><Run Text="1.657.83 TL"/><LineBreak/><Run Text="KDV DAHİL"/></TextBlock>
+
+                            </Border>
+
+                            <!--Özelleştir-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <Image Margin="188,70,10,32.8" Source="/İtopya;component/Image/sepetekle.png"/>
+
+                            </Border>
+
+                            <!--Özelleştir-Buton-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <Button Content="Button" Margin="191,68,10,34.8" Opacity="0"/>
+
+                            </Border>
+
+                            <!--ÜÇÜNCÜ ÜRÜN-->
+
+                            <!--Picture-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <Image Margin="10,10,184,9.8" Source="/İtopya;component/Image/OY3.jpg"/>
+
+                            </Border>
+
+                            <!--İsim-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <TextBlock TextWrapping="Wrap" Text="Microsoft Office 2016 Ev ve İş İngilizce Kutu" Margin="103,10,10,9.8" FontSize="10"/>
+
+                            </Border>
+
+                            <!--Fiyat-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <TextBlock TextWrapping="Wrap" Margin="103,62,10,-42.2" FontSize="14"><Run Text="1.681.63 TL"/><LineBreak/><Run Text="KDV DAHİL"/></TextBlock>
+
+                            </Border>
+
+                            <!--Özelleştir-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <Image Margin="188,70,10,32.8" Source="/İtopya;component/Image/sepetekle.png"/>
+
+                            </Border>
+
+                            <!--Özelleştir-Buton-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <Button Content="Button" Margin="191,72,10,33.8" Opacity="0"/>
+
+                            </Border>
+
+                            <!--DÖRDÜNCÜ ÜRÜN-->
+
+                            <!--Picture-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <Image Margin="0,10,188,17.4" Source="/İtopya;component/Image/OY4.jpg"/>
+
+                            </Border>
+
+                            <!--İsim-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <TextBlock TextWrapping="Wrap" Text="MS OFFICE 365 BİREYSEL 32/64BIT TURKCE KUTU 1 YIL QQ2-00521" Margin="103,10,10,9.8" FontSize="10"/>
+
+                            </Border>
+
+                            <!--Fiyat-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <TextBlock TextWrapping="Wrap" Margin="103,62,10,-42.2" FontSize="14"><Run Text="399.00 TL"/><LineBreak/><Run Text="KDV DAHİL"/></TextBlock>
+
+                            </Border>
+
+                            <!--Özelleştir-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <Image Margin="188,70,10,32.8" Source="/İtopya;component/Image/sepetekle.png"/>
+
+                            </Border>
+
+                            <!--Özelleştir-Buton-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <Button Content="Button" Margin="191,72,10,34.6" Opacity="0"/>
+
+                            </Border>
+
+                        </Grid>
+
+                    </Grid>
+                    <Grid HorizontalAlignment="Left" Height="644" VerticalAlignment="Top" Width="280" Background="White" Margin="0,0,0,-144" x:Name="Ram" Visibility="Hidden">
+                        <Grid HorizontalAlignment="Left" Height="627" VerticalAlignment="Top" Width="280" Margin="0,0,0,-127">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="10"/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+
+                            <!--SLİDER-->
+
+
+                            <Border Grid.Column="0" Grid.Row="0"/>
+
+                            <!--İLK ÜRÜN-->
+
+                            <!--Picture-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <Image Margin="0,10,172,10" Source="/İtopya;component/Image/ram1.jpg"/>
+
+                            </Border>
+
+                            <!--İsim-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <TextBlock TextWrapping="Wrap" Margin="103,10,10,9.8" FontSize="10" Text="ADATA XPG GAMMIX D30 32GB (2x16GB) 3000MHZ DDR4 CL16 DUAL PC RAM"/>
+
+                            </Border>
+
+                            <!--Fiyat-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <TextBlock TextWrapping="Wrap" Margin="103,62,10,-42.2" FontSize="14"><Run Text="1356 TL"/><LineBreak/><Run Text="KDV DAHİL"/></TextBlock>
+
+                            </Border>
+
+                            <!--Özelleştir-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <Image Margin="188,70,10,32.8" Source="/İtopya;component/Image/sepetekle.png"/>
+
+                            </Border>
+
+                            <!--Özelleştir-Buton-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <Button Content="Button" Margin="191,68,10,34.8" Opacity="0"/>
+
+                            </Border>
+
+                            <!--İKİNCİ ÜRÜN-->
+
+                            <!--Picture-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <Image Margin="0,10,179,10.4" Source="/İtopya;component/Image/ram2.jpg"/>
+
+                            </Border>
+
+                            <!--İsim-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <TextBlock TextWrapping="Wrap" Text="ADATA XPG GAMMIX D30 8GBX1 3200MHZ DDR4 SINGLE PC RAM" Margin="103,10,10,9.8" FontSize="10"/>
+
+                            </Border>
+
+                            <!--Fiyat-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <TextBlock TextWrapping="Wrap" Margin="103,62,10,-42.2" FontSize="14"><Run Text="399 TL"/><LineBreak/><Run Text="KDV DAHİL"/></TextBlock>
+
+                            </Border>
+
+                            <!--Özelleştir-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <Image Margin="188,70,10,32.8" Source="/İtopya;component/Image/sepetekle.png"/>
+
+                            </Border>
+
+                            <!--Özelleştir-Buton-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <Button Content="Button" Margin="191,68,10,34.8" Opacity="0"/>
+
+                            </Border>
+
+                            <!--ÜÇÜNCÜ ÜRÜN-->
+
+                            <!--Picture-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <Image Margin="10,10,184,9.8" Source="/İtopya;component/Image/ram3.jpg"/>
+
+                            </Border>
+
+                            <!--İsim-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <TextBlock TextWrapping="Wrap" Text="GSKILL 16GB (1x16GB) Ripjaws V Kırmızı DDR4 3000Mhz CL16 Single Kit Ram" Margin="103,10,10,9.8" FontSize="10"/>
+
+                            </Border>
+
+                            <!--Fiyat-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <TextBlock TextWrapping="Wrap" Margin="103,62,10,-42.2" FontSize="14"><Run Text="659 TL"/><LineBreak/><Run Text="KDV DAHİL"/></TextBlock>
+
+                            </Border>
+
+                            <!--Özelleştir-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <Image Margin="188,70,10,32.8" Source="/İtopya;component/Image/sepetekle.png"/>
+
+                            </Border>
+
+                            <!--Özelleştir-Buton-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <Button Content="Button" Margin="191,72,10,33.8" Opacity="0"/>
+
+                            </Border>
+
+                            <!--DÖRDÜNCÜ ÜRÜN-->
+
+                            <!--Picture-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <Image Margin="0,10,179,9.6" Source="/İtopya;component/Image/ram4.jpg"/>
+
+                            </Border>
+
+                            <!--İsim-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <TextBlock TextWrapping="Wrap" Text="GSKILL 8GB (1X8GB) SniperX Orman Kamuflaj DDR4 3200Mhz CL16 Single Kit Ram" Margin="103,10,10,9.8" FontSize="10"/>
+
+                            </Border>
+
+                            <!--Fiyat-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <TextBlock TextWrapping="Wrap" Margin="103,62,10,-42.2" FontSize="14"><Run Text="471 TL"/><LineBreak/><Run Text="KDV DAHİL"/></TextBlock>
+
+                            </Border>
+
+                            <!--Özelleştir-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <Image Margin="188,70,10,32.8" Source="/İtopya;component/Image/sepetekle.png"/>
+
+                            </Border>
+
+                            <!--Özelleştir-Buton-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <Button Content="Button" Margin="191,72,10,34.6" Opacity="0"/>
+
+                            </Border>
+
+                        </Grid>
+
+                    </Grid>
+                    <Grid HorizontalAlignment="Left" Height="800" VerticalAlignment="Top" Width="280" Background="White" Margin="0,0,0,-144" x:Name="Ssd" Visibility="Hidden">
+                        <Grid HorizontalAlignment="Left" Height="627" VerticalAlignment="Top" Width="280" Margin="0,0,0,-127">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="10"/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+
+                            <!--SLİDER-->
+
+
+                            <Border Grid.Column="0" Grid.Row="0"/>
+
+                            <!--İLK ÜRÜN-->
+
+                            <!--Picture-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <Image Margin="0,10,172,10" Source="/İtopya;component/Image/ssd1.JPG"/>
+
+                            </Border>
+
+                            <!--İsim-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <TextBlock TextWrapping="Wrap" Text="SAMSUNG 1TB 970 EVO Plus NVMe M.2 SSD (3500MB Okuma / 3300MB Yazma)" Margin="103,10,10,9.8" FontSize="10"/>
+
+                            </Border>
+
+                            <!--Fiyat-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <TextBlock TextWrapping="Wrap" Margin="103,62,10,-42.2" FontSize="14"><Run Text="306 TL"/><LineBreak/><Run Text="KDV DAHİL"/></TextBlock>
+
+                            </Border>
+
+                            <!--Özelleştir-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <Image Margin="188,70,10,32.8" Source="/İtopya;component/Image/sepetekle.png"/>
+
+                            </Border>
+
+                            <!--Özelleştir-Buton-->
+
+                            <Border Grid.Column="0" Grid.Row="1">
+                                <Button Content="Button" Margin="191,68,10,34.8" Opacity="0"/>
+
+                            </Border>
+
+                            <!--İKİNCİ ÜRÜN-->
+
+                            <!--Picture-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <Image Margin="0,10,179,10.4" Source="/İtopya;component/Image/ssd2.jpg"/>
+
+                            </Border>
+
+                            <!--İsim-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <TextBlock TextWrapping="Wrap" Text="SAMSUNG 500GB 970 EVO Plus NVMe M.2 SSD (3500MB Okuma / 3200MB Yazma)" Margin="103,10,10,9.8" FontSize="10"/>
+
+                            </Border>
+
+                            <!--Fiyat-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <TextBlock TextWrapping="Wrap" Margin="103,62,10,-42.2" FontSize="14"><Run Text="2342 TL"/><LineBreak/><Run Text="KDV DAHİL"/></TextBlock>
+
+                            </Border>
+
+                            <!--Özelleştir-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <Image Margin="188,70,10,32.8" Source="/İtopya;component/Image/sepetekle.png"/>
+
+                            </Border>
+
+                            <!--Özelleştir-Buton-->
+
+                            <Border Grid.Column="0" Grid.Row="2">
+                                <Button Content="Button" Margin="191,68,10,34.8" Opacity="0"/>
+
+                            </Border>
+
+                            <!--ÜÇÜNCÜ ÜRÜN-->
+
+                            <!--Picture-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <Image Margin="10,10,184,9.8" Source="/İtopya;component/Image/ssd3.jpg"/>
+
+                            </Border>
+
+                            <!--İsim-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <TextBlock TextWrapping="Wrap" Text="SAMSUNG 250GB 970 EVO Plus NVMe M.2 SSD (3500MB Okuma / 2300MB Yazma)" Margin="103,10,10,9.8" FontSize="10"/>
+
+                            </Border>
+
+                            <!--Fiyat-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <TextBlock TextWrapping="Wrap" Margin="103,62,10,-42.2" FontSize="14"><Run Text="3197 TL"/><LineBreak/><Run Text="KDV DAHİL"/></TextBlock>
+
+                            </Border>
+
+                            <!--Özelleştir-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <Image Margin="188,70,10,32.8" Source="/İtopya;component/Image/sepetekle.png"/>
+
+                            </Border>
+
+                            <!--Özelleştir-Buton-->
+
+                            <Border Grid.Column="0" Grid.Row="3">
+                                <Button Content="Button" Margin="191,72,10,33.8" Opacity="0"/>
+
+                            </Border>
+
+                            <!--DÖRDÜNCÜ ÜRÜN-->
+
+                            <!--Picture-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <Image Margin="0,10,179,9.6" Source="/İtopya;component/Image/ssd4.jpg"/>
+
+                            </Border>
+
+                            <!--İsim-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <TextBlock TextWrapping="Wrap" Text="ADATA 512GB XPG SX8200 PRO PCIe Gen3x4 M.2 SSD (3500MB Okuma / 2300MB Yazma)" Margin="103,10,10,9.8" FontSize="10"/>
+
+                            </Border>
+
+                            <!--Fiyat-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <TextBlock TextWrapping="Wrap" Margin="103,62,10,-42.2" FontSize="14"><Run Text="797 TL"/><LineBreak/><Run Text="KDV DAHİL"/></TextBlock>
+
+                            </Border>
+
+                            <!--Özelleştir-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <Image Margin="188,70,10,32.8" Source="/İtopya;component/Image/sepetekle.png"/>
+
+                            </Border>
+
+                            <!--Özelleştir-Buton-->
+
+                            <Border Grid.Column="0" Grid.Row="4">
+                                <Button Content="Button" Margin="191,72,10,34.6" Opacity="0"/>
+
+                            </Border>
+
+                        </Grid>
+
+                    </Grid>
+                </Grid>
+            </Border>
+        </Grid>
+    </ScrollViewer>
+</Window>
