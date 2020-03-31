@@ -1,0 +1,6 @@
+C:\Users\Mustafa\source\repos\WcfServiceLibrary3\WcfServiceLibrary3\bin\Debug\WcfServiceLibrary3.dll.config
+C:\Users\Mustafa\source\repos\WcfServiceLibrary3\WcfServiceLibrary3\bin\Debug\WcfServiceLibrary3.dll
+C:\Users\Mustafa\source\repos\WcfServiceLibrary3\WcfServiceLibrary3\bin\Debug\WcfServiceLibrary3.pdb
+C:\Users\Mustafa\source\repos\WcfServiceLibrary3\WcfServiceLibrary3\obj\Debug\GettingStartedLib.csproj.CoreCompileInputs.cache
+C:\Users\Mustafa\source\repos\WcfServiceLibrary3\WcfServiceLibrary3\obj\Debug\WcfServiceLibrary3.dll
+C:\Users\Mustafa\source\repos\WcfServiceLibrary3\WcfServiceLibrary3\obj\Debug\WcfServiceLibrary3.pdb

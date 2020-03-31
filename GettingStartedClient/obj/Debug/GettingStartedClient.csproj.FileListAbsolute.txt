@@ -1,0 +1,6 @@
+C:\Users\Mustafa\source\repos\WcfServiceLibrary3\GettingStartedClient\bin\Debug\GettingStartedClient.exe.config
+C:\Users\Mustafa\source\repos\WcfServiceLibrary3\GettingStartedClient\bin\Debug\GettingStartedClient.exe
+C:\Users\Mustafa\source\repos\WcfServiceLibrary3\GettingStartedClient\bin\Debug\GettingStartedClient.pdb
+C:\Users\Mustafa\source\repos\WcfServiceLibrary3\GettingStartedClient\obj\Debug\GettingStartedClient.csproj.CoreCompileInputs.cache
+C:\Users\Mustafa\source\repos\WcfServiceLibrary3\GettingStartedClient\obj\Debug\GettingStartedClient.exe
+C:\Users\Mustafa\source\repos\WcfServiceLibrary3\GettingStartedClient\obj\Debug\GettingStartedClient.pdb
